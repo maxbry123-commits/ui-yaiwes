@@ -1,0 +1,176 @@
+{
+  "bundle_bytes": 357631300,
+  "bundle_sha256": "522b9e90b6e2c849cf370b80790d18a8cc542ef56a31b0e80f6af9ec56ff5edb",
+  "extracted_tree": {
+    "bytes": 1964285425,
+    "files": 35404,
+    "sha256": "c2f59474458c38eeb9e7a95aa354042db1c9ad5c0dca08b4ee67fd4b29347919"
+  },
+  "extraction_verified": true,
+  "max_github_blob_bytes": 104857600,
+  "no_lfs": true,
+  "part_size_limit_bytes": 12582912,
+  "parts": [
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0001",
+      "sha256": "fc5d39086522a91ed346115cd97a864b824624353964e2c034c0982d0748b2ac"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0002",
+      "sha256": "4e1e7280e74c513ab0ab6f0caf33db9f234ebc9ae10a1d72c8108a956d2b3d20"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0003",
+      "sha256": "64742018d8778ded67bfe2e6a216e77a2105a96c1630250fc72087731bca8b0e"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0004",
+      "sha256": "0637b5844bff5a2734764135e4e0f816eabdaec88bc8ac159796eec55df6a900"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0005",
+      "sha256": "f845afeb46a9980eddc246361d7734d992bbd27948a5c61b2354b594550ad91f"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0006",
+      "sha256": "b8d4cc3278cc1ad531f491c7d1c9c94209922bf2a8f0b5b0bd19bb40b7a66063"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0007",
+      "sha256": "3f0d6160fb8092a42fc0268e3a85d6f9aff3f46cc8067bed294e74facbe6f7fc"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0008",
+      "sha256": "4a80d1cf75c72f4fe0fc264cb9edfc1ecc198b72e61a69cc5091b028983be31f"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0009",
+      "sha256": "0905fddde448859f29a0258756f7da2f653777806b7e3d06629da22ad3d463ea"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0010",
+      "sha256": "51083f0af70a5f28b4ab0bab7ea584e282d60c23e9f51e4ed63ddc61e2b6ca02"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0011",
+      "sha256": "7c7d6a8f55e132c93a8e2e67a251cfd882e772a332c29fffea046333ceeb75c5"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0012",
+      "sha256": "4ebc190f072917ec88e73e21cbc5b591d3cc28d7c9bf99ffd99fc82ede1f610a"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0013",
+      "sha256": "401260f3586fa3b95d699f5cb17952b8fa4f9970a1592bed3930eb336d0a240b"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0014",
+      "sha256": "d7c211a7ae33751d60b666229461f7419b9936fa7c4b312f718bb54884aa9f9e"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0015",
+      "sha256": "7bf9f46e0c86de429e363153c7b4975387e344cf1353397717c05a898e635f21"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0016",
+      "sha256": "082d8765562bc7f232d8b4398916a2c885f328e70c773af34290d821fee5ec64"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0017",
+      "sha256": "44f741578d2aade776137d03a61f79ec1f3a5dbccfa0be8843ad666d5da4ca10"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0018",
+      "sha256": "1e5f4f4eb7984e2babe3d4b8d858becb27c10512f6b29dce46b6021162c8e21c"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0019",
+      "sha256": "b53b2ac8af6e9f626ec592f3efe83c3cf98d382da19571cc26fdeac945be4588"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0020",
+      "sha256": "fd0760a3c9dbe9980f05686b2fa62fcbf3fa115d2cf545943b8136b009e34b12"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0021",
+      "sha256": "b16a937815efe6606284ffc0d4f9a1aef649663bd51b10744dbb7efa2c3d0b5e"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0022",
+      "sha256": "ffce92dcf4d7597d94e6b4600ed12d482a1445fcc25ddd6beb4d419149f8f5f7"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0023",
+      "sha256": "c11c73fc18fab9a4454dcbc6c96ee608e4c833b045073ccb0139c136cd573423"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0024",
+      "sha256": "a640426f8e4774045fdf116530b70f9ad03b3138637aad0e27dc66ad6bdf00dd"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0025",
+      "sha256": "001935c6d0996d86435e295c0ad723b5d68f16de952214ea257a9c6a2c515876"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0026",
+      "sha256": "15eec76fc9ec8b8e57bfe43437ddd2fec6274b9bb1f30dd27ce03aa52a074aa1"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0027",
+      "sha256": "c03316c974d70fc0bfed173075eba1ec29644f219260ef4cec5a53908120d125"
+    },
+    {
+      "bytes": 12582912,
+      "name": "UI YAIWES interface.bundle.zip.part-0028",
+      "sha256": "44230f96bd3f62c0074919a425a2d4fc9f7305a6dc1c9358080622304c6bef0b"
+    },
+    {
+      "bytes": 5309764,
+      "name": "UI YAIWES interface.bundle.zip.part-0029",
+      "sha256": "7b90ef9f2bca40b3e5ebe0ff98b93dec44b4916fe0d7306fad745215c2bc9b0c"
+    }
+  ],
+  "reconstruction_verified": true,
+  "schema": "yaiwes.hf.download-extract.v1",
+  "skipped_special": [],
+  "skipped_special_count": 0,
+  "slug": "UI YAIWES interface",
+  "source_bytes": 1964285425,
+  "source_commit": "eff1bfe0ab5b47ed1f70506b2c49cca6fd6f0ecb",
+  "source_files": 35404,
+  "source_path": "UI YAIWES interface",
+  "source_ref": "main",
+  "source_repo": "maxbry123-commits/frontend",
+  "source_tree": {
+    "bytes": 1964285425,
+    "files": 35404,
+    "sha256": "c2f59474458c38eeb9e7a95aa354042db1c9ad5c0dca08b4ee67fd4b29347919"
+  }
+}
