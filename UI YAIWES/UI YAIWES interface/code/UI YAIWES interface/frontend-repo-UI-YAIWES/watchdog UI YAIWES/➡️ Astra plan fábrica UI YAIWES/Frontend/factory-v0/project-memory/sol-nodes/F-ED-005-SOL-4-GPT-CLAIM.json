@@ -1,0 +1,22 @@
+{
+  "schema":"yaiwes.factory.sol.claim.v1",
+  "contract":"tel.workflow/v3",
+  "chat_id":"SOL-4-GPT-2026-09-12T21:47-05:00",
+  "agent_name":"SOL 4 GPT 🆘",
+  "node_id":"F-ED-005",
+  "fresh_main_sha":"2da8ba5991882c99f0a73912b37d92d144f768fa",
+  "base_sha":"6e1b73d07e26f67d25fea8a690fadb047371a0c4",
+  "write_scope":"Factory F-ED-005 canvas-visible/stable verification evidence only; no shared product write; excludes Wordflow N01-N31",
+  "paths":["UI YAIWES/watchdog UI YAIWES/➡️ Astra plan fábrica UI YAIWES/Frontend/factory-v0/project-memory/sol-nodes/F-ED-005-SOL-4-GPT-CLAIM.json","UI YAIWES/watchdog UI YAIWES/➡️ Astra plan fábrica UI YAIWES/Frontend/factory-v0/project-memory/F-ED-005-SOL-4-EVIDENCE.json"],
+  "claimed_at":"2026-09-12T21:47:00-05:00",
+  "state":"PASS_PENDING_REVIEW",
+  "classification":"NONE_REPRODUCED_BY_SOURCE_AND_EXISTING_GATE",
+  "strategy_delta":"REUSE_EXISTING; no product mutation",
+  "tests":["candidate DOM readback","desktop/mobile CSS non-collapse invariant","historical 50/50 desktop boot visibility acknowledged but not inherited to current SHA"],
+  "simulations":3,
+  "refutations":3,
+  "remaining_gaps":["fresh exact-SHA browser gate","independent reviewer"],
+  "review_required":true,
+  "next_free_node":"READ_FRESH_REQUIRED",
+  "goals12_output":{"G01":"PASS","G02":"PASS","G03":"PASS","G04":"PASS","G05":"PASS","G06":"PASS","G07":"PASS","G08":"PASS static","G09":"GAP fresh E2E","G10":"PASS","G11":"PASS evidence persisted","G12":"PASS reread required"}
+}

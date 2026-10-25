@@ -1,0 +1,23 @@
+{
+  "schema":"yaiwes.factory.sol.claim.v1",
+  "contract":"tel.workflow/v3",
+  "chat_id":"SOL-2-GPT-2026-09-12T22:15-05:00",
+  "agent_name":"SOL 2 GPT 🆘",
+  "node_id":"F-CTL-010",
+  "fresh_main_sha":"33f0a9647d9a987b2e84fad33fa379ce87daa888",
+  "base_sha":"33f0a9647d9a987b2e84fad33fa379ce87daa888",
+  "write_scope":"F-CTL-010 undo/redo history verification and minimum delta only",
+  "paths":["UI YAIWES/watchdog UI YAIWES/➡️ Astra plan fábrica UI YAIWES/Frontend/factory-v0/project-memory/sol-nodes/F-CTL-010-SOL-2-GPT-CLAIM.json","UI YAIWES/watchdog UI YAIWES/➡️ Astra plan fábrica UI YAIWES/Frontend/factory-v0/project-memory/F-CTL-010-SOL-2-EVIDENCE.json","UI YAIWES/watchdog UI YAIWES/➡️ Astra plan fábrica UI YAIWES/Frontend/factory-v0/tests/e2e/f-ctl-010-undo-redo.spec.mjs",".github/workflows/factory-f-ctl-010-undo-redo.yml"],
+  "claimed_at":"2026-09-12T22:16:31-05:00",
+  "state":"PASS",
+  "pass_percent":100,
+  "final_tested_sha":"9138766c6898ddedd232a3fe7fa01dfd9932cff9",
+  "run_id":34735229765,
+  "job_id":103665351574,
+  "result_marker":"F_CTL_010_RESULT=PASS_6_OF_6",
+  "evidence_path":"UI YAIWES/watchdog UI YAIWES/➡️ Astra plan fábrica UI YAIWES/Frontend/factory-v0/project-memory/F-CTL-010-SOL-2-EVIDENCE.json",
+  "steps":["VERIFY_RESEARCH=PASS","EXECUTE_DELTA=PASS","TEST_REPORT=PASS"],
+  "goals12_output":{"G01":"PASS","G02":"PASS","G03":"PASS","G04":"PASS","G05":"PASS","G06":"PASS","G07":"PASS","G08":"PASS","G09":"PASS","G10":"PASS","G11":"PASS","G12":"PASS"},
+  "remaining_gaps":[],
+  "released":true
+}

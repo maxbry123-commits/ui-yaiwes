@@ -1,0 +1,131 @@
+{
+  "schema": "yaiwes.astra.factory_interface.crazy_wall.v4",
+  "contract": "tel.workflow/v3",
+  "updated_date": "2026-09-10",
+  "owner_identity": "➡️ Astra plan fábrica UI YAIWES",
+  "scope": "ONLY_FACTORY_AND_UI_YAIWES_INTERFACE",
+  "status": "ACTIVE_LOOP",
+  "repo": "maxbry123-commits/frontend",
+  "branch": "main",
+  "integration_allowlist": ["GitHub", "Hugging Face"],
+  "canonical_literal_inputs": [
+    "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/INPUT-BLOCK-LITERAL-2026-09-10.md",
+    "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/INPUT-BLOCK-LITERAL-ADDENDUM-2026-09-10.md",
+    "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/INPUT-BLOCK-LITERAL-PART-02-2026-09-10.md"
+  ],
+  "canonical_files": {
+    "profile": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/PERFIL-TRABAJO-Y-PERFIL-UI-YAIWES.md",
+    "architecture": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/ARQUITECTURA-DETALLADA-FABRICA-E-INTERFACE-YAIWES-V2.md",
+    "component_matrix": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/MATRIZ-FUSION-46-COMPONENTES-FRONTEND-BACKEND.md",
+    "plan": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/PLAN-MAESTRO-TAREA1-TAREA2-ASTRA-V3.md",
+    "audit_primary": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/AUDITORIA-FORENSE-4-PASADAS-ASTRA-V2.md",
+    "audit_detailed": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/AUDITORIA-4-PASADAS-INPUT-PLAN-ARQUITECTURA-CABLEADO-2026-09-10.md",
+    "audit_factory_v1": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/AUDITORIA-POSTCHECK-FACTORY-RUNTIME-V1-2026-09-10.md",
+    "state": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/STATE.json",
+    "checkpoint": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/CHECKPOINT.json",
+    "recovery": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/RECOVERY-PATCH-ASTRA-FABRICA-INTERFACE-YAIWES-V4.md",
+    "handoff": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/HANDOFF-ASTRA-CLAUDE-FABRICA-INTERFACE-YAIWES-V4.md"
+  },
+  "physical_roots": {
+    "factory": "fabrica de UI INTERFACE fromtend/",
+    "oss_library": "UI YAIWES/componentes open soure UI YAIWES/",
+    "historical_product_interface": "UI YAIWES interface/",
+    "astra_workspace": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/",
+    "frontend": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/Frontend/",
+    "backend_donor_staging": "UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/backend/",
+    "sol_backend_reference": "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/wordflow_loop/wordflow_loop/"
+  },
+  "scope_rules": {
+    "external_backend_is_reference_only": true,
+    "external_backend_owner": "➡️🤯 sol plan 1 UI YAIWES backend",
+    "backend_donor_policy": "Astra backend/ is DONOR_STAGING_ONLY until explicit handoff",
+    "single_writer_per_path": true,
+    "producer_cannot_self_certify": true,
+    "forbidden": [
+      "claim ownership of Sol backend paths",
+      "write Sol backend path without explicit handoff",
+      "store credentials/API keys",
+      "use connectors/plugins other than GitHub or Hugging Face without explicit later authorization",
+      "mark SOURCE_PRESENT as WIRED",
+      "map backend PASS directly to VERIFIED_CLOSED",
+      "start productive T2 before T1 VERIFIED_CLOSED",
+      "force push on conflict",
+      "create monolithic production factory from whole donor repositories"
+    ]
+  },
+  "persistent_product_goal": {
+    "product": "YAIWES proprietary SaaS AI-first workbench",
+    "experience": "Jarvis central orchestrator + workspaces + workflows/agents + code/design/build + artifacts/files/terminal/task trace + plugins/backend + model selector + evidence",
+    "platforms": ["web", "Windows", "Linux", "Android", "iOS", "smartphone", "PC"],
+    "local_runtime": "partial local UI/workflow/embedded AI with encrypted sensitive local state where appropriate",
+    "web_runtime": "agents and principal LLM services live on web/service side",
+    "storage": "local by default where appropriate; optional user-selected connectors",
+    "factory_role": "private internal Factory permanently builds/tests/versions/improves Interface UI YAIWES"
+  },
+  "task_gate": {
+    "T1_FACTORY": "must reach VERIFIED_CLOSED by independent reviewer before productive T2",
+    "T2_INTERFACE": "read-only research/contracts may occur during T1; productive implementation remains BLOCKED until T1 VERIFIED_CLOSED"
+  },
+  "tasks": {
+    "T1_00_LITERAL_INPUT": {"status":"VERIFIED_CLOSED","owner":"ASTRA","evidence":["INPUT-BLOCK-LITERAL-2026-09-10.md","INPUT-BLOCK-LITERAL-ADDENDUM-2026-09-10.md","INPUT-BLOCK-LITERAL-PART-02-2026-09-10.md"],"security_exception":"raw credentials deliberately not replicated; secret_ref only"},
+    "T1_01_PROFILE": {"status":"VERIFIED_CLOSED","owner":"ASTRA","evidence":["PERFIL-TRABAJO-Y-PERFIL-UI-YAIWES.md"]},
+    "T1_02_ARCHITECTURE": {"status":"CLOSED_UNVERIFIED","owner":"ASTRA","evidence":["ARQUITECTURA-DETALLADA-FABRICA-E-INTERFACE-YAIWES-V2.md","AUDITORIA-FORENSE-4-PASADAS-ASTRA-V2.md","AUDITORIA-4-PASADAS-INPUT-PLAN-ARQUITECTURA-CABLEADO-2026-09-10.md"],"close_gap":"implementation + independent reviewer required"},
+    "T1_03_COMPONENT_XRAY": {"status":"ACTIVE_LOOP","owner":"ASTRA","inputs":["fabrica de UI INTERFACE fromtend/","UI YAIWES/componentes open soure UI YAIWES/"],"evidence":["MATRIZ-FUSION-46-COMPONENTES-FRONTEND-BACKEND.md"],"exit":"root-wide useful capability map with provenance/license/entrypoints/tests"},
+    "T1_04_CANVAS_OWNER_SELECTION": {"status":"PENDING","owner":"ASTRA","exit":"bakeoff + one CanvasOwner/API"},
+    "T1_05_COMPONENT_REGISTRY_CONTRACT": {"status":"PENDING","owner":"ASTRA"},
+    "T1_06_FACTORY_SHELL_AND_5_STEPS": {"status":"PENDING","owner":"ASTRA"},
+    "T1_07_M1_ELEMENT_BUILDER": {"status":"PENDING","owner":"ASTRA"},
+    "T1_08_M2_UI_COMPOSER": {"status":"PENDING","owner":"ASTRA"},
+    "T1_09_M3_COMPONENT_TRANSFORMER": {"status":"PENDING","owner":"ASTRA"},
+    "T1_10_M4_AI_OPERATOR": {"status":"PENDING","owner":"ASTRA"},
+    "T1_11_M5_DETERMINISTIC_KIT": {"status":"PENDING","owner":"ASTRA"},
+    "T1_12_UNIVERSAL_CONTRACT_AND_ADAPTERS": {"status":"PENDING","owner":"ASTRA"},
+    "T1_13_SANDBOX_PREVIEW_HF_PRIVATE": {"status":"PENDING","owner":"ASTRA"},
+    "T1_14_TESTS_EVIDENCE_ROLLBACK": {"status":"PENDING","owner":"ASTRA"},
+    "T1_15_ZERO_FRICTION_3_SIMULATIONS": {"status":"PENDING","owner":"ASTRA"},
+    "T1_16_FACTORY_FINAL_INDEPENDENT_AUDIT": {"status":"PENDING","owner":"CLAUDE_OR_OTHER_INDEPENDENT_REVIEWER"},
+    "T2_00_REQUIREMENTS": {"status":"BLOCKED_BY_T1_FOR_EXECUTION","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED","allowed_during_T1":"read-only research/contracts"},
+    "T2_01_APP_SHELL_WORKSPACES": {"status":"BLOCKED_BY_T1","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED"},
+    "T2_02_JARVIS_COMMAND_CENTER": {"status":"BLOCKED_BY_T1","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED"},
+    "T2_03_FILES_ARTIFACTS_EDITORS": {"status":"BLOCKED_BY_T1","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED"},
+    "T2_04_WORKFLOW_TASK_TRACE_EVIDENCE": {"status":"BLOCKED_BY_T1","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED"},
+    "T2_05_PLUGIN_BACKEND_PANEL": {"status":"BLOCKED_BY_T1","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED"},
+    "T2_06_MODEL_PROVIDER_SELECTOR": {"status":"BLOCKED_BY_T1","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED"},
+    "T2_07_MULTIPLATFORM": {"status":"BLOCKED_BY_T1","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED"},
+    "T2_08_SECURITY": {"status":"BLOCKED_BY_T1","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED"},
+    "T2_09_REAL_BACKEND_BINDINGS": {"status":"BLOCKED_BY_T1","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED","external_dependency":"Sol backend contracts"},
+    "T2_10_E2E_RELEASE": {"status":"BLOCKED_BY_T1","owner":"ASTRA_OR_CLAUDE_HANDOFF_ALLOWED"}
+  },
+  "experimental_factory_v1": {
+    "path":"UI YAIWES/watchdog UI YAIWES/Astra plan fábrica UI YAIWES/Frontend/factory-v1/index.html",
+    "commit":"a9f9818dd76025141333df5102fc885646df8d70",
+    "blob":"a6d078c9accca130344f7ceddefb5482d15c4978",
+    "classification":"EXPERIMENTAL_REFERENCE_AND_DONOR",
+    "status":"CLOSED_UNVERIFIED",
+    "does_not_advance_current_node":true,
+    "refutation_evidence":"AUDITORIA-POSTCHECK-FACTORY-RUNTIME-V1-2026-09-10.md"
+  },
+  "open_gaps": [
+    {"id":"GAP_COMPONENT_XRAY_NOT_COMPLETE","node":"T1_03"},
+    {"id":"GAP_CANVAS_OWNER_NOT_SELECTED","node":"T1_04"},
+    {"id":"GAP_PROVIDER_MODEL_AVAILABILITY","node":"T1_10/T1_12"},
+    {"id":"GAP_HF_PRIVATE_FACTORY_DEPLOYMENT_NOT_VERIFIED","node":"T1_13/T1_14"},
+    {"id":"GAP_BACKEND_LLM_CAPABILITY_FOR_FACTORY","node":"EXTERNAL_DEPENDENCY/T1_10/T1_12"},
+    {"id":"GAP_REAL_BACKEND_BINDINGS_NOT_VERIFIED_T2","node":"T2_09"},
+    {"id":"GAP_FACTORY_V1_MONOLITHIC_PROTOTYPE","node":"REFERENCE_ONLY"}
+  ],
+  "backend_crosscheck": {
+    "contracts":"Evidence + NodeContract + LayerResult + Status physically read",
+    "registry":"ComponentSpec physically read; WIRED/DONOR_ONLY/REFERENCE_ONLY/PENDING_SOURCE remain distinct",
+    "llm_gate":"general factory AI/Autopilot not verified; current gate only ambiguity_resolution/semantic_ranking/bounded_summary",
+    "mapping_rule":"backend PASS -> RUNTIME_PASS; independent reviewer required for VERIFIED_CLOSED"
+  },
+  "canonical_frontend_cable":"drag/drop | Jarvis prompt | command palette -> TypedAction -> Frontend Guard -> Factory Step Engine / Universal Action Bus -> adapter -> BackendBinding when applicable -> backend/local capability -> RuntimeEvent -> Normalizer -> UIStateDelta -> verifier/evidence -> frontend store -> render",
+  "component_import_cable":"source -> URL/ref/commit/license/hash -> static inspection -> capability extraction -> FRONTEND/BACKEND_DONOR split -> ComponentManifest -> universal contract -> adapter -> sandbox preview -> build/tests -> RegistryCandidate -> V+/evidence",
+  "ai_change_cable":"AIIntent -> ContextPack -> ProviderRef/ModelRef -> PlanProposal -> UIStateDelta -> diff/preview -> policy/guards -> tests -> apply|reject|rollback -> evidence",
+  "loop":"INPUT literal -> GOALS12 -> priorities -> plan -> queue1x1 -> execute/review -> verify/refute -> GAP/FLAG -> research up to 20 -> StrategyDelta -> retry/continue safe task -> Council12 -> 3 simulations -> 3 refutations -> cross-check -> CODA -> verify_final",
+  "closure_rule":"SOURCE_PRESENT != WIRED != RUNTIME_TEST_PASS != VERIFIED_CLOSED",
+  "resume_rule":"read 3 literal inputs -> this Crazy Wall -> STATE -> CHECKPOINT -> profile -> architecture V2 -> matrix -> Plan V3 -> audits incl runtime-v1 refutation -> Recovery V4 -> Handoff V4 -> fresh HEAD/ownership -> resume exactly current_node",
+  "current_node":"T1_03_COMPONENT_XRAY",
+  "next_after_current":"T1_04_CANVAS_OWNER_SELECTION"
+}

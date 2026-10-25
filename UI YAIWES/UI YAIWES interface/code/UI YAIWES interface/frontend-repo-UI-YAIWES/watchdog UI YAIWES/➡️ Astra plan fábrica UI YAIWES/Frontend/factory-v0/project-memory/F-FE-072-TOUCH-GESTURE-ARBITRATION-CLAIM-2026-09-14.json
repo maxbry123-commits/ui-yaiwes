@@ -1,0 +1,31 @@
+{
+  "schema": "yaiwes.factory.node-claim/v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "node_id": "F-FE-072-TOUCH-GESTURE-ARBITRATION",
+  "segment_id": "SEG-04-TOUCH",
+  "lane": "GROK-A",
+  "agent": "GROK",
+  "owner": "GROK 1 UI YAIWES",
+  "chat_id": "GROK-1-UI-YAIWES-WATCHDOG-HORARIO",
+  "state": "RELEASED_COLLISION",
+  "release": true,
+  "fresh_main_sha_at_claim": "251102b104e9c36771551fcc84ee31f1dd357216",
+  "claim_commit_self": "797f433b1f6bf97289fb5c8ea981935796002c3a",
+  "collision": {
+    "first_writer": "GROK 3",
+    "chat_id": "GROK-3-UI-YAIWES-FACTORY",
+    "claim_commit": "1c14293ae3baf4c12dfb95d0e5800239d85492b5",
+    "claimed_at": "2026-09-14T10:38:39Z",
+    "path": "Frontend/factory-v0/project-memory/F-FE-072-TOUCH-GESTURE-ARBITRATION-CLAIM-2026-09-14.md",
+    "overlapping_write_scope": [
+      "Frontend/factory-v0/src/touch-dnd-v194.js",
+      "Frontend/factory-v0/tests/e2e/f-fe-072-touch-gesture-arbitration.spec.mjs",
+      ".github/workflows/factory-f-fe-072-touch-gesture-arbitration*.yml"
+    ]
+  },
+  "policy": "READ_FRESH → NO WRITE → RELEASE/SKIP → NEXT DEPENDENCY-SATISFIED NODE",
+  "product_paths_written": [],
+  "reported_at": "2026-09-14T10:40:30Z",
+  "next_free_node": "F-FE-073-TOUCH-DRAG-INTENT after F-FE-072 PASS_RELEASED; no other GROK-A node is dependency-satisfied"
+}

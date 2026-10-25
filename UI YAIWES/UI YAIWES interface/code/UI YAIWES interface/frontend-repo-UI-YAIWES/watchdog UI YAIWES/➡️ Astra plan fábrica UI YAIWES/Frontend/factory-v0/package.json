@@ -1,0 +1,15 @@
+{
+  "name": "yaiwes-astra-factory-v0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/factory.test.mjs && node tests/lucide-donor.test.mjs",
+    "test:logic": "node tests/factory.test.mjs",
+    "test:donor": "node tests/lucide-donor.test.mjs",
+    "test:e2e": "playwright test tests/e2e/factory-v17.smoke.spec.mjs",
+    "test:e2e:legacy": "playwright test tests/e2e/factory.e2e.spec.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.0"
+  }
+}

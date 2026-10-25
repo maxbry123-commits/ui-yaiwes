@@ -1,0 +1,21 @@
+{
+  "schema":"yaiwes.factory.sol.report.v1",
+  "contract":"tel.workflow/v3",
+  "chat_id":"SOL-8-GPT-2026-09-12T21:55-05:00",
+  "agent_name":"SOL 8 GPT 🆘",
+  "node_id":"F-CTL-009",
+  "state":"PASS",
+  "base_sha":"d39503b37cdd1e435022fea782d2068259a15738",
+  "final_tested_sha":"d30270d78318320068a2de35c7e680d3762ab8d3",
+  "classification_history":["EVIDENCE_FAILURE","INFRA_FAILURE","TEST_HARNESS_FAILURE","PASS"],
+  "verify_research":{"product":"existing app-v19 zoom + xyflow minimap/fit-view adapter reused","product_patch_required":false},
+  "execute_delta":{"strategy":"REUSE_EXISTING","test":"tests/e2e/f-ctl-009-zoom-fit-minimap.spec.mjs","workflow":".github/workflows/factory-f-ctl-009.yml","product_source_changed_by_sol8":false},
+  "test_report":{"run_id":34735254160,"job_id":103665418340,"head_sha":"d30270d78318320068a2de35c7e680d3762ab8d3","conclusion":"success","syntax_static":"PASS","runtime_e2e":"PASS_1_OF_1","log_terminal":"1 passed (1.8s)","pass_artifact_files":"NONE_GENERATED; log/run/job retained as evidence","previous_failure":{"run_id":34735187848,"job_id":103665238766,"classification":"TEST_HARNESS_FAILURE","fix":"accept actual fit-view effect via zoom OR scroll"}},
+  "simulations":["zoom reset/in/out changes viewport zoom reproducibly","minimap node click selects corresponding real canvas node","far geometry + fit-view changes viewport and keeps nonzero minimap viewport"],
+  "refutations":["presence-only rejected; browser checks effects","scroll-only implementation assumption rejected while observable viewport change remains mandatory","historical/cancelled runs rejected; only exact SHA d30270d7 run certifies PASS"],
+  "goals12_output":{"G01":"PASS","G02":"PASS","G03":"PASS","G04":"PASS","G05":"PASS","G06":"PASS","G07":"PASS","G08":"PASS","G09":"PASS","G10":"PASS","G11":"PASS","G12":"PASS"},
+  "remaining_gaps":[],
+  "review_required":false,
+  "result":"100_PASS_NODE_LEVEL",
+  "next_free_node":"READ_FRESH_REQUIRED"
+}

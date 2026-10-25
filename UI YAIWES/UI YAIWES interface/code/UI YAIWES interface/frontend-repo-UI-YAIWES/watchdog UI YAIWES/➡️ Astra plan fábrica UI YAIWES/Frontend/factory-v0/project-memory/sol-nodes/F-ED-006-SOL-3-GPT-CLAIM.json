@@ -1,0 +1,11 @@
+{
+  "schema":"yaiwes.factory.sol.claim.v1","contract":"tel.workflow/v3","chat_id":"SOL-3-GPT-2026-09-12T21:44-05:00","agent_name":"SOL 3 GPT 🆘","node_id":"F-ED-006",
+  "base_sha":"4146b690ecd2c61f5b6d853e08a2ccefbb8f3523","final_tested_sha":"287a51814806bfe06a311a195f99d5fb91e82df9",
+  "write_scope":"F-ED-006 single contextual scroll owner: scroll-preserver + dedicated browser test/workflow + evidence; excludes Wordflow N01-N31",
+  "state":"PASS_PENDING_REVIEW",
+  "classification":["PRODUCT_FAILURE_PATCHED","TEST_HARNESS_FAILURE_IDENTIFIED_AND_ISOLATED","EVIDENCE_FAILURE_RESOLVED"],
+  "product_commit":"fdfec70894ca18d225004b0f484c4fb1ec5939fa","dedicated_test_commit":"9cfb6031f3e77a59d8bf7ace5dd89d3d2461414f","workflow_commit":"287a51814806bfe06a311a195f99d5fb91e82df9","evidence_commit":"d797d17f1e12cc2b49cef43c5c53df985eb871ce","evidence_blob":"2b49219ac0a08a50fc8d0ddc4df0ed5a1412a31a",
+  "run_id":34734838713,"job_id":103664278104,"result":"SUCCESS","tests":["syntax PASS","single owner PASS","desktop mouse scroll 0->900 PASS","mobile viewport hit owner PASS","mobile touch scroll 0->472 PASS"],
+  "simulations":3,"refutations":3,"review_required":true,"remaining_gaps":["independent reviewer before VERIFIED_CLOSED","global Factory downstream closure"],"next_free_node":"READ_FRESH_REQUIRED","steps":["VERIFY_RESEARCH","EXECUTE_DELTA","TEST_REPORT"],
+  "goals12_output":{"G01":"PASS","G02":"PASS","G03":"PASS","G04":"PASS","G05":"PASS","G06":"PASS","G07":"PASS","G08":"PASS","G09":"PASS","G10":"PASS","G11":"PASS","G12":"PASS"}
+}

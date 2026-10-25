@@ -1,0 +1,20 @@
+{
+  "schema":"yaiwes.factory.sol.claim.v1",
+  "contract":"tel.workflow/v3",
+  "chat_id":"SOL-4-GPT-2026-09-12T22:08-05:00",
+  "agent_name":"SOL 4 GPT 🆘",
+  "node_id":"F-AI-022",
+  "fresh_main_sha":"9cfb6031f3e77a59d8bf7ace5dd89d3d2461414f",
+  "base_sha":"197f2a78b43ba5e899588463f1d95169c2ba3b34",
+  "tested_sha":"ffb0120f9032fa7915c7e786d77b7a19e026c649",
+  "state":"PASS_PENDING_REVIEW",
+  "classification":"PRODUCT_FAILURE_RESOLVED",
+  "strategy_delta":"ADAPT shared import controller via canonical drop",
+  "tests":{"run_id":34734770943,"job_id":103664092658,"conclusion":"SUCCESS","regression_run_id":34734760325,"regression_job_id":103664061338,"regression_conclusion":"SUCCESS"},
+  "simulations":3,
+  "refutations":3,
+  "review_required":true,
+  "remaining_gaps":["independent review","aggregate QA"],
+  "next_free_node":"READ_FRESH_REQUIRED",
+  "released_at":"2026-09-12T22:10:30-05:00"
+}

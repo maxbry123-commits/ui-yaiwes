@@ -1,0 +1,29 @@
+{
+  "schema": "yaiwes.factory.sol.claim.v1",
+  "contract": "tel.workflow/v3",
+  "chat_id": "SOL-3-GPT-2026-09-12T21:44-05:00",
+  "agent_name": "SOL 3 GPT 🆘",
+  "node_id": "F-ED-002",
+  "fresh_main_sha": "9e3cfc8a880aeea8f05b08face76c2ff07880864",
+  "base_sha": "9e3cfc8a880aeea8f05b08face76c2ff07880864",
+  "write_scope": "Factory F-ED-002 only: desktop drag/drop movement verification and minimum delta; excludes mobile touch E01/F-ED-001 and Wordflow N01-N31",
+  "paths": [
+    "UI YAIWES/watchdog UI YAIWES/➡️ Astra plan fábrica UI YAIWES/Frontend/factory-v0/project-memory/sol-nodes/F-ED-002-SOL-3-GPT-CLAIM.json",
+    "UI YAIWES/watchdog UI YAIWES/➡️ Astra plan fábrica UI YAIWES/Frontend/factory-v0/project-memory/F-ED-002-SOL-3-EVIDENCE.json"
+  ],
+  "claimed_at": "2026-09-12T21:44:30-05:00",
+  "state": "PASS_PENDING_REVIEW",
+  "claim_commit_sha": "1e370dd89c3cd94043896665e77e7383b95ad204",
+  "evidence_commit_sha": "a045332796dbaacce9f88129867f0c86d397cf39",
+  "evidence_blob_sha": "f277d1f391bbcf312ae6962dd1156c4ae4c1edce",
+  "tests": "desktop drag before/after assertion + exact-candidate 50/50 desktop cycles + reload recovery; global workflow fails mobile outside this node",
+  "run_id": 34732313529,
+  "job_id": 103657241958,
+  "simulations": 3,
+  "refutations": 3,
+  "remaining_gaps": ["F-ED-001 mobile TOUCH_COORDINATE_MISS", "independent review of F-ED-002 evidence"],
+  "review_required": true,
+  "next_free_node": "F-ED-003 after fresh owner/path reconciliation",
+  "steps": ["VERIFY_RESEARCH", "EXECUTE_DELTA", "TEST_REPORT"],
+  "goals12_output": {"G01":"PASS","G02":"PASS","G03":"PASS","G04":"PASS","G05":"PASS","G06":"PASS","G07":"PASS_REUSE_NO_PRODUCT_PATCH","G08":"PASS","G09":"PASS","G10":"PASS","G11":"PASS","G12":"PASS"}
+}

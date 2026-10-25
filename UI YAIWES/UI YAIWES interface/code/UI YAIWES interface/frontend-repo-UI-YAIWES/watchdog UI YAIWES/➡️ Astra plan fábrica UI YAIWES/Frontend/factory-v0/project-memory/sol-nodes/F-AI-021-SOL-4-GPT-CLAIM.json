@@ -1,0 +1,21 @@
+{
+  "schema":"yaiwes.factory.sol.claim.v1",
+  "contract":"tel.workflow/v3",
+  "chat_id":"SOL-4-GPT-2026-09-12T22:04-05:00",
+  "agent_name":"SOL 4 GPT 🆘",
+  "node_id":"F-AI-021",
+  "fresh_main_sha":"a70548f4347576ef0efbdaa1d2cfaa1e6e0e1879",
+  "base_sha":"6d2edb26ec4fa47eb795933847d8fa5e72415bd8",
+  "tested_sha":"de1721965e8fa7edce34a17e948cb305685196a3",
+  "state":"PASS_PENDING_REVIEW",
+  "classification":"PRODUCT_FAILURE_RESOLVED",
+  "strategy_delta":"ADAPT parser/controller over canonical canvas drop; no second state engine",
+  "paths_changed":["Frontend/factory-v0/src/file-import-v1.js","Frontend/factory-v0/src/file-import-controller-v1.js","Frontend/factory-v0/index-v192.html","Frontend/factory-v0/tests/e2e/f-ai-021-file-import.spec.mjs",".github/workflows/factory-f-ai-021-file-import.yml","Frontend/factory-v0/project-memory/F-AI-021-SOL-4-EVIDENCE.json"],
+  "tests":{"run_id":34734680224,"job_id":103663832303,"conclusion":"SUCCESS"},
+  "simulations":3,
+  "refutations":3,
+  "review_required":true,
+  "remaining_gaps":["independent review","aggregate QA"],
+  "next_free_node":"READ_FRESH_REQUIRED",
+  "released_at":"2026-09-12T22:08:00-05:00"
+}
