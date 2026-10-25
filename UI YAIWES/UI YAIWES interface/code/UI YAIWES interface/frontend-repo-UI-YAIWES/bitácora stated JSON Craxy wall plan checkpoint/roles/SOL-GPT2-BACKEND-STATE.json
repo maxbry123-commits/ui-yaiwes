@@ -1,0 +1,200 @@
+{
+  "schema": "yaiwes.crazy-wall.role-state.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "role": "SOL_GPT2_BACKEND",
+  "name": "Sol gpt 2 🤯👷backend",
+  "node_prefix": "S2",
+  "status": "ACTIVE_DEBATE_LOOP_WITH_BLOCKING_GAPS",
+  "base_main_sha": "5df552c3e7e50187390811a0d3edc167c62db5b5",
+  "crazy_wall_blob_sha": "4c7b9164246857278d416def6766a2b9bb5b6030",
+  "state_blob_sha_observed": "20323fd9be69fb7bec86d8edc5e6c19a74782ecc",
+  "canonical_motors_commit": "ef0669bbc753861bfc33b86548f3f90c0f3d8df9",
+  "canonical_policy": "COPY_ONLY_IMMUTABLE_NO_LFS_NO_FORCE",
+  "director_delta_seen": "2026-09-11T06:31:47Z",
+  "loop_cycle": 7,
+  "nodes": {
+    "S2-01": {
+      "component": "DuckDB",
+      "status": "BLOCKED_SOURCE_SPECIAL_FILE_GAP_CONFIRMED_ACROSS_REFS",
+      "source": "https://github.com/duckdb/duckdb",
+      "original_ref": "78c40873b9ac7e22b90dafd3883c12abf93b2466",
+      "original_ref_date": "2023-03-13",
+      "original_diagnostic_run_id": 34562878473,
+      "original_result": {
+        "failed": 1,
+        "pending": 0,
+        "verdict": "GAPS_PENDING",
+        "special_paths": [
+          "test/sql/copy/csv/data/glob/crawl/symbolic_link/link_to_file",
+          "test/sql/copy/csv/data/glob/crawl/symbolic_link/mydir/link_to_upper_dir"
+        ]
+      },
+      "current_official_branch": "v2.0-cyanoptera",
+      "current_official_ref": "f60316b6abfd9074f553e9e880b85171c747f867",
+      "current_official_ref_date": "2026-09-10",
+      "current_retry_queue": "UI YAIWES/automation/S2-duckdb-retry-current-20260911/QUEUE.json",
+      "current_retry_workflow": ".github/workflows/sol-gpt2-s2-01-duckdb-current-retry-20260911.yml",
+      "current_retry_run_id": 34565130195,
+      "current_retry_job_id": 103155580176,
+      "current_retry_result": {
+        "failed": 1,
+        "pending": 0,
+        "verdict": "GAPS_PENDING",
+        "special_paths": [
+          "data/csv/glob/crawl/.symbolic_link/link_to_file",
+          "data/csv/glob/crawl/.symbolic_link/mydir/link_to_upper_dir"
+        ]
+      },
+      "root_cause": "SOURCE_SPECIAL_FILE_GAP: official DuckDB git tree contains symlinks and immutable Motor 2 rejects any symlink/special source entry before bundling",
+      "strategies_checked": [
+        "retry original pinned ref: rejected by same symlink gate",
+        "retry current official DuckDB ref: rejected by same symlink gate",
+        "alternate GitHub amalgamation search: no official DuckDB-owned equivalent located",
+        "source filtering/sanitization: not authorized and would violate fail-closed source-integrity rule",
+        "motor patch to permit symlinks: prohibited by immutable motor policy"
+      ],
+      "motor_modified": false,
+      "source_sanitized": false,
+      "publication_attempted": false,
+      "move_attempted": false,
+      "verdict": "FAIL_CLOSED; coordinator confirmed KEEP_FAIL_CLOSED; no blind retry"
+    },
+    "S2-02": {
+      "component": "AVF",
+      "status": "MOTOR_PROVIDER_GAP_RUNTIME_CAPABILITY_AND_HARDWARE_TEST_GAP",
+      "canonical_source": "https://android.googlesource.com/platform/packages/modules/Virtualization/",
+      "evidence_file": "UI YAIWES/automation/S2-avf-capabilities-20260911/AVF-CAPABILITIES.json",
+      "evidence_commit": "f10204204664b4756f2612a42ea0a7b9ce41937c",
+      "evidence_blob_sha": "1abe3f95c9ee1d1b43207890ad2efeb94d983ce0",
+      "functional_source_blob": "ecc8b3b1444ade0ca894789e149e881a08b999c0",
+      "transport": {
+        "canonical_motor_compatible": false,
+        "reason": "immutable engine normalizes non-GitHub SOURCE_REPO by prefixing https://github.com/",
+        "motor_modified": false,
+        "alternate_provider_used": false
+      },
+      "runtime_implementation_audit": {
+        "runtime_src_tree_sha": "be46fd0fdb7694d3af0c6a76814fe139a0dbaf7e",
+        "identifiers_checked": ["VirtualMachineManager","MANAGE_VIRTUAL_MACHINE","AndroidVMProvider","HypervisorCapabilityManager","CapabilityDetector","pKVM","AVF"],
+        "code_search_matches": 0,
+        "avf_or_android_backend_found": false,
+        "gap": "AVF_CAPABILITY_PROBE_IMPLEMENTATION_GAP"
+      },
+      "runtime_capability_summary": {
+        "Android_ARM64_physical": "CONDITIONAL_SUPPORTED; capability+permission+guest boot evidence required",
+        "Android_x86_64_Cuttlefish": "TEST_ONLY_NON_PROTECTED_DOCUMENTED; not tested in S2",
+        "Linux_desktop": "NOT_NATIVE_AVF_HOST",
+        "Windows_desktop": "NOT_NATIVE_AVF_HOST",
+        "iOS_iPadOS": "NOT_NATIVE_AVF_HOST",
+        "Web_browser_PWA": "NOT_NATIVE_AVF_HOST"
+      },
+      "permissions": {
+        "MANAGE_VIRTUAL_MACHINE": "restricted SystemApi permission; third-party APK access must not be assumed",
+        "USE_CUSTOM_VIRTUAL_MACHINE": "restricted; custom path only when actually granted"
+      },
+      "guest_constraints": "Source availability/acquisition/API presence/capability bits do not demonstrate guest boot",
+      "verdict": "FAIL_CLOSED_PROVIDER_RUNTIME_AND_HARDWARE_CAPABILITY_GAP"
+    },
+    "S2-03": {
+      "status": "READBACK_COMPLETED_FRESH_MAIN_CYCLE_4",
+      "readback_main_sha": "868d3fcc0fb8f9f7d092da4c0251eb733c0e7d81",
+      "final_root": "UI YAIWES/componentes open soure UI YAIWES",
+      "readback": {"Vite":"404_ABSENT","Supabase":"404_ABSENT","DuckDB":"404_ABSENT","AVF":"404_ABSENT"},
+      "verdict": "0/4 residuals present at canonical final root in cycle 4"
+    },
+    "S2-04": {
+      "status": "FAIL_CLOSED_NOT_VERIFIED",
+      "failed_zero": false,
+      "pending_zero": false,
+      "duckdb_latest_failed": 1,
+      "duckdb_latest_pending": 0,
+      "avf_provider_gap": true,
+      "avf_runtime_capability_probe_implemented": false,
+      "avf_physical_android_guest_boot_verified": false,
+      "four_residual_readback_present": 0,
+      "four_residual_readback_expected": 4,
+      "verdict": "VERIFIED_CLOSED prohibited"
+    },
+    "S2-DEBATE-R2-L05-GAP-TYPING": {
+      "status": "TESTED_PASS_SCOPE_L05_ONLY",
+      "l05_commit": "52a26e7ed83f7eb8ad14dca60ce5702765b2be19",
+      "tests_commit": "d005758d083c09a3ae6aa4dd999a04414bccadd3",
+      "ci_run_id": 34569726823,
+      "ci_job_id": 103169993658,
+      "ci_conclusion": "success",
+      "ci_steps": "checkout/setup/install/Wordflow tests/Universal Socket+Fables tests all success",
+      "scope_boundary": "PASS proves typed L05 gap behavior/tests only; it does not close DuckDB acquisition, AVF provider/runtime or global WIRED status"
+    },
+    "S2-R3-AVF-CAPABILITY-PROBE-CONTRACT": {
+      "status": "READ_ONLY_CONTRACT_DEFINED_AND_READBACK_VERIFIED",
+      "coordinator_reply_file": "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/roles/SOL-PLAN-ORQUESTADOR-REPLY-S2.json",
+      "coordinator_reply_blob": "1c60fd01028cc67164fb2ac5cbfb3335fd0495a4",
+      "artifact": "UI YAIWES/automation/S2-avf-capabilities-20260911/AVF-CAPABILITY-PROBE-CONTRACT.json",
+      "artifact_commit": "a25e7f5966e4a482515c61d28923a648761067b2",
+      "artifact_blob_sha": "97619b9970377ab85a4409203ea5136ea3f95acd",
+      "gates": ["G1_TRANSPORT_PROVIDER","G2_HOST_CAPABILITY","G3_PERMISSION","G4_GUEST_BOOT_EVIDENCE","G5_PLATFORM_FALLBACK"],
+      "official_api": {
+        "minimum_api_level": 34,
+        "manager": "android.system.virtualmachine.VirtualMachineManager",
+        "feature": "android.software.virtualization_framework",
+        "CAPABILITY_PROTECTED_VM": 1,
+        "CAPABILITY_NON_PROTECTED_VM": 2,
+        "permission": "android.permission.MANAGE_VIRTUAL_MACHINE"
+      },
+      "platform_matrix": {
+        "Android_ARM64": "AVF conditional; capability + permission + real guest boot required",
+        "Android_x86_64_Cuttlefish": "test-only non-protected path; real test required",
+        "Linux": "KVM/QEMU; AVF N/A",
+        "Windows": "WHPX/QEMU; AVF N/A",
+        "iOS_iPadOS": "QEMU/UTM-style subject to Apple restrictions; AVF N/A",
+        "Web_PWA": "no native AVF claim; explicit runtime backend required"
+      },
+      "refutation": "Source presence/provider success/manager availability cannot be promoted to guest-boot PASS; each gate is independent."
+    },
+    "S2-R3-AVF-PROBE-IMPLEMENTATION-HANDOFF": {
+      "status": "READ_ONLY_HANDOFF_READY_AND_READBACK_VERIFIED",
+      "artifact": "UI YAIWES/automation/S2-avf-capabilities-20260911/AVF-RUNTIME-INTEGRATION-HANDOFF.json",
+      "artifact_commit": "153bb5260669c2f81cefeacc545601a07eec2f8a",
+      "artifact_blob_sha": "0e7dd4d9076c80cadd3048c9a5f5f527b23406a9",
+      "decision": "Use existing Universal Plugin Socket; do not implement probe in Stabilize core and do not create second orchestrator",
+      "integration_points": {
+        "plugin_adapter": "runtime/src/plugins/android_avf_adapter/ if explicitly authorized",
+        "plugin_contract_blob": "41465001ec9fc2bcd93d9ad9ea36b78830fd0367",
+        "plugins_readme_blob": "8732a9de56263f30b7f2809772dd850ed29f37b1",
+        "integration_validator": "runtime/src/integration/ consumes normalized result and blocks COMPLETE without required evidence",
+        "core_boundary": "runtime/src/core/ consumes validated backend state only; no Android API probing"
+      },
+      "mutation_performed": false,
+      "runtime_mutation_owner": "coordinator or explicitly assigned code owner",
+      "next_safe_node": "Continue read-only inspection of registry/loader/mount_guard insertion points and debate unless mutation authorization arrives"
+    }
+  },
+  "debate": {
+    "status": "ACTIVE_DEBATE_LOOP_DO_NOT_CLOSE",
+    "round_2": {
+      "question": "Revisa si L05 debe representar provider/special-file gaps como DuckDB symlink y AVF non-GitHub sin intentar corregirlos dentro de la capa.",
+      "answer": {"decision":"YES. L05 preserves typed acquisition GAPs and never repairs/sanitizes/substitutes provider inside the layer.","gap_code":"PROVIDER_GAP | SPECIAL_FILE_GAP | DESTINATION_INPUT_GAP | SOURCE_LOCK_GAP | AUTHORIZATION_GAP | MOTOR_MISMATCH | READBACK_GAP","pass_gate":"canonical motor + literal authorized destination + VERIFIED_CLOSED + failed=0 + pending=0 + strong read-back/hash"},
+      "refutation": "Generic post-motor GAP alone is operationally lossy."
+    },
+    "round_3": {
+      "coordinator_reply_status": "ACTIONABLE_REPLY_LOOP_CONTINUES",
+      "coordinator_reply_blob": "1c60fd01028cc67164fb2ac5cbfb3335fd0495a4",
+      "order_consumed": "Define minimal AVF capability-probe contract; separate transport, host capability, permission, guest boot and fallback; do not stop while CI pending.",
+      "execution_status": "CONTRACT_AND_HANDOFF_COMPLETED_READ_ONLY",
+      "capability_contract_blob": "97619b9970377ab85a4409203ea5136ea3f95acd",
+      "runtime_handoff_blob": "0e7dd4d9076c80cadd3048c9a5f5f527b23406a9",
+      "l05_typed_gap_ci": {"run_id":34569726823,"job_id":103169993658,"head_sha":"d005758d083c09a3ae6aa4dd999a04414bccadd3","observed_status":"COMPLETED","conclusion":"SUCCESS"},
+      "reply_to_coordinator": "L05 typed-gap CI is SUCCESS. AVF probe contract and runtime integration handoff are published/read-back verified. No shared runtime mutation performed. Please accept/refute handoff and assign runtime mutation owner; S2 continues next read-only node meanwhile."
+    }
+  },
+  "watchdog": {
+    "required": true,
+    "cadence": "1 hour",
+    "active_observed": true,
+    "active_automation_id": "6aa308848f38819199dcbc74feda1d44",
+    "title": "SOL2 Backend YAIWES",
+    "scope_aligned_to_s2_queue": true
+  },
+  "next_action": "ACTIVE_DEBATE_LOOP / DO_NOT_CLOSE. Re-read Crazy Wall and coordinator reply after this STATE write. L05 typed-gap tests are SUCCESS; DuckDB and AVF acquisition remain fail-closed. Continue read-only registry/loader/mount_guard inspection unless explicit runtime mutation authorization arrives."
+}

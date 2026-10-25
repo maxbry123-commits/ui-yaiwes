@@ -1,0 +1,89 @@
+{
+  "schema": "yaiwes.node-report.v1",
+  "contract": "tel.workflow/v3",
+  "node_id": "O-02-MULTI-SANDBOX-RECOVERY-E2E",
+  "owner": "SOL_ORQUESTADOR",
+  "base_main_sha": "f48e9ec875c2f6cad03bd474914fbf937c4a7795",
+  "status": "TESTED_RECOVERY_CONTROL_PLANE_O02_EXECUTING",
+  "claimed_at": "2026-09-12T06:40:00Z",
+  "claim_refreshed_at": "2026-09-13T01:44:10Z",
+  "write_scope": [
+    "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/runtime/src/recovery/**",
+    "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/runtime/tests/test_recovery_control_plane.py",
+    "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/reports/O-*.json",
+    "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/CRAZY-WALL-*.json",
+    "UI YAIWES/readme arquitectura UI YAIWES/*XRAY*",
+    ".github/workflows/yaiwes-wordflow-loop-pytest.yml"
+  ],
+  "collision_check": "No competing fresh claim for runtime/src/recovery/** found before write.",
+  "assertion_to_validate": "YAIWES uses a thin deterministic project recovery control-plane over Stabilize WorkflowRecovery and Wordflow durable ledger; it does not duplicate the recovery engine.",
+  "verify": {
+    "stabilize_recovery_path": "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/runtime/vendor/stabilize/recovery.py",
+    "classification": "REUSE_STABILIZE_ENGINE_PLUS_MINIMAL_YAIWES_CONTROL_PLANE",
+    "stabilize_capabilities": [
+      "recover pending/running workflows",
+      "requeue workflow/stage/task",
+      "idempotent sweep",
+      "transactional queue push",
+      "RecoveryResult audit"
+    ],
+    "wordflow_durability": [
+      "hash-chain ledger",
+      "cross-process lock",
+      "fsync",
+      "atomic replace",
+      "tamper fail-closed",
+      "latest-state replay"
+    ]
+  },
+  "delta": {
+    "package_commit": "fd65f363a5df418c6497fb04f29c8d9896f44073",
+    "control_plane_commit": "f3df601dd33a5a06f080cca1bb7fb47582b9618c",
+    "test_commit": "1854f9ed19d2d2782b8a174035423a6557f15b5f",
+    "implementation": "requires strong checkpoint SHA256 + ledger integrity, delegates workflow recovery, summarizes recovered/skipped/partial/failed, safe_to_continue only when partial=failed=0"
+  },
+  "test": {
+    "global_workflow": ".github/workflows/yaiwes-wordflow-loop-pytest.yml",
+    "latest_run": 34723669555,
+    "state_at_report": "COMPLETED_SUCCESS_READBACK",
+    "earlier_full_src_run": 34716613952,
+    "earlier_job": 103615713852,
+    "earlier_progress": "Wordflow LOOP tests success; runtime tests in_progress",
+    "rule": "P18 control-plane subgate TESTED by completed/success global run; O-02 remains open until workspace/multi-host sandbox failover E2E.",
+    "latest_run_status": "completed",
+    "latest_run_conclusion": "success",
+    "latest_global_run": 34721174155,
+    "latest_global_conclusion": "cancelled",
+    "latest_global_reason": "job_exceeded_10_minute_timeout",
+    "targeted_recovery_tests": "5_TARGETED_TESTS_COVERED_BY_SUCCESSFUL_GLOBAL_REGRESSION",
+    "promotion": "RECOVERY_CONTROL_PLANE_TESTED_SUBGATE",
+    "strategy_delta_commit": "84678c4cd81394bdb2712a6a18a2b7ea8fab6fe3",
+    "latest_job": 103633952112,
+    "wordflow_tests": "23 passed in 0.11s",
+    "runtime_tests": "62 passed + 9 subtests in 674.36s",
+    "log_readback": true
+  },
+  "remaining_gap": [
+    "workspace/multi-host sandbox failover E2E remains unproved",
+    "sandbox lifecycle/backend selection remains unproved"
+  ],
+  "next_step": "Continue O-02 with one real workspace/sandbox failover-reconstruction test; do not treat the control-plane unit/global regression PASS as failover E2E.",
+  "closure_rule": "SOURCE_PRESENT != IMPLEMENTED != WIRED != RUNTIME_TEST_PASS != VERIFIED_CLOSED",
+  "updated_at_utc": "2026-09-13T01:44:10Z",
+  "coordination_observation": {
+    "checked_at_utc": "2026-09-13T01:44:10Z",
+    "s1_memory_boundary": {
+      "status": "TARGETED_ACCEPTANCE_PLUS_GLOBAL_REGRESSION_PASS",
+      "report": "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/reports/S1-09-MEMORY-AGENT-BOUNDARY.json",
+      "implementation_commit": "17d98a7e7f1a083108c96443d5bc10a05bb7024d",
+      "test_commit": "084debdb8acb102d9d41b9ca39b8ca88d8c29125",
+      "run": 34730513826,
+      "job": 103652482919,
+      "wordflow": "23 passed",
+      "runtime": "75 passed + 9 subtests",
+      "log_readback": true,
+      "promotion": "P08_MEMORY_BOUNDARY_SUBGATE_TESTED_NOT_P08_P10_OR_STORAGE_E2E_CLOSED"
+    },
+    "collision_flag": "ROLE_STATE_REFERENCES_SEPARATE_S1_HOURLY_WATCHDOG_AND_EDITOR_QUEUE_EXISTS; CENTRAL_WORDflow_QUEUE_V2_REMAINS_AUTHORITATIVE_FOR_THIS_LOOP"
+  }
+}

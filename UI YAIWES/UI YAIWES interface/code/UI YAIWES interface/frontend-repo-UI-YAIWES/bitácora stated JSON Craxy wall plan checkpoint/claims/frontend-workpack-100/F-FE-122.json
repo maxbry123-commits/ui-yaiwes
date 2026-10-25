@@ -1,0 +1,22 @@
+{
+  "schema": "yaiwes.factory.frontend.node-claim.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "node_id": "F-FE-122-APPLY-THEME",
+  "segment_id": "SEG-03-EDITOR-CORE",
+  "lane": "GROK-C",
+  "state": "PASS_RELEASED",
+  "owner": "GROK 4",
+  "agent": "GROK",
+  "chat_id": "GROK-4-UI-YAIWES-WATCHDOG-HORARIO",
+  "fresh_main_sha": "b5a5b0dbb5d273ac220403f797e158d32f814a33",
+  "claimed_at": "2026-09-15T00:52:33Z",
+  "claim_commit": "869ab95fec3a9e33b494254bd2a7fa47ef186c0d",
+  "delta_commit": "d469cf72896e1bb1d7738d9a7cfe0013fd89b5a5",
+  "released_at": "2026-09-15T00:55:33Z",
+  "type": "CONTROL_QA",
+  "selector": "#apply-theme",
+  "run_id": 34915012049,
+  "job_id": 104210655633,
+  "release": true
+}

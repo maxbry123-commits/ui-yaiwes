@@ -1,0 +1,22 @@
+{
+  "schema": "yaiwes.factory.frontend.node-claim.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "node_id": "F-FE-111-ELEMENT-BUTTON",
+  "segment_id": "SEG-02-BROWSER",
+  "lane": "GROK-C",
+  "state": "PASS_RELEASED",
+  "owner": "GROK 4",
+  "agent": "GROK",
+  "chat_id": "GROK-4-UI-YAIWES-WATCHDOG-HORARIO",
+  "fresh_main_sha": "26302ba10f2ee1b223512d0a32a672b2a578dd72",
+  "claimed_at": "2026-09-14T19:50:21Z",
+  "claim_commit": "80caaefb08124310138c040a19c4862047fba21e",
+  "delta_commit": "d9c19ff01bd2f6cf6eb5776d2b7901c54a0727e2",
+  "released_at": "2026-09-14T19:53:30Z",
+  "type": "CONTROL_QA",
+  "selector": "[data-kind='button']",
+  "run_id": 34889387388,
+  "job_id": 104127940021,
+  "release": true
+}

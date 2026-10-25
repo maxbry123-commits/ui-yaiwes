@@ -1,0 +1,20 @@
+{
+  "schema": "yaiwes.skill-to-schema.v1",
+  "slug": "Taste",
+  "source_repo": "Leonxlnx/taste-skill",
+  "source_ref": "main",
+  "source_url": "https://github.com/Leonxlnx/taste-skill",
+  "downloaded_at": "2026-09-22T12:45:59Z",
+  "watchdog": "Motor de descarga",
+  "dest_root": "UI YAIWES/componentes open soure UI YAIWES/Taste",
+  "reuse_rule": "REUSE > GENERATE / COPY_ONLY",
+  "zip_bytes": 2844179,
+  "zip_sha256": "140b066c1605b49465042b7ef274fc5af9b727416cfc1453f60a1ff70a4742e2",
+  "source_files": 65,
+  "source_bytes": 3118728,
+  "tree_sha256": "aaed193f236177e5eea47af9a1c6a0c4f0f2ef5e7f12042434e859a110b0342b",
+  "skills_count": 13,
+  "skills": [],
+  "status": "STAGED_LOCAL_VERIFIED",
+  "publish": "PENDING_BLOB_PUBLISH"
+}

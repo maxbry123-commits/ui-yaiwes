@@ -1,0 +1,39 @@
+{
+  "schema": "tel.workflow/v3.claim",
+  "state": "GAP_RELEASED_FAIL_CLOSED",
+  "chat_id": "SOL GPT <19>",
+  "node_id": "N28-API-CONTROL",
+  "fresh_main_sha": "e3d86ac3accd8520efcb52ebcd1e1d295a6a21b6",
+  "write_scope": "runtime/src/conn/**|runtime/src/integration/**|runtime/tests/test_integration*",
+  "claimed_at": "2026-09-13T07:00:00Z",
+  "released_at": "2026-09-13T07:00:00Z",
+  "strategy": "RECONCILE_CODE_AND_TRUSTED_CI_BEFORE_PATCH",
+  "paths_verified": [
+    "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/runtime/src/conn/api_control.py",
+    "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/runtime/tests/test_integration_api_control.py"
+  ],
+  "blob_sha": {
+    "api_control.py": "ac81ca96f97663faddb03e9e712a498366eb543f",
+    "test_integration_api_control.py": "e21384df64a1bb6f18c043e526e54321586864fc"
+  },
+  "trusted_ci": {
+    "run_id": 34742769854,
+    "job_id": 103685181927,
+    "head_sha": "54436297718fc33a64128002f96569250fe56579",
+    "status": "completed",
+    "conclusion": "success",
+    "wordflow": "41 passed",
+    "runtime": "238 passed",
+    "subtests": "39 passed"
+  },
+  "refutations": [
+    "schema implementation and auth/stream/cancel/status behavior covered by current exact test blob",
+    "technical gaps resolved by trusted successful descendant CI with exact N28 blob identity",
+    "authoritative central Crazy Wall still says GAP_RESOLVABLE with obsolete CI gaps, so global closure is refused fail-closed"
+  ],
+  "remaining_gaps": [
+    "central Crazy Wall N28 row must be reconciled by shared-state owner/CAS-safe writer"
+  ],
+  "result": "TECHNICAL_PASS_CENTRAL_STATE_GAP",
+  "next_action": "released for shared-state reconciliation; SOL GPT <19> proceeds to next independent FREE/GAP_RESOLVABLE node"
+}

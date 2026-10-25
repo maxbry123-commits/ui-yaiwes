@@ -1,0 +1,21 @@
+{
+  "schema": "yaiwes.gap-claim.v1",
+  "contract": "tel.workflow/v3",
+  "parent_node": "GAP-02-N35-S3-REMAINDER",
+  "subgap": "REQ-S3-045",
+  "owner": "ChatGPT-Sol-supervisor",
+  "state": "VERIFIED_CLOSED",
+  "base_main_sha": "24b82729724375ff0547ad2b9520429036fa738c",
+  "result": "§45 Workflow↔Memory/Audit context-pack handoff reused existing agent/memory boundary; first focused run exposed sparse-checkout harness GAP, corrected without product-code mutation.",
+  "evidence": {
+    "failed_harness_run": "34827941503/103924292005",
+    "strategy_delta_commit": "65bd5d5b8894f47e625a62034a40054b2b757a5b",
+    "trusted_ci": "34828085852/103924748765",
+    "implementation_sha256": "2f5d141f6a2c917520181720b38bf3374b96779be0939203bf34567bc5869459",
+    "test_sha256": "52a528eb9c7b727648787b9ff98286b92a344d61caa1bc8477b2f1cb941ee7c6",
+    "trace_commit": "460c5ca9df0fa11c9ad1b5115b351fc6a2f0afee",
+    "five_pass_run": "34828216403/103925159663",
+    "five_pass": "TRACEABILITY_PASS"
+  },
+  "remaining_gaps": []
+}

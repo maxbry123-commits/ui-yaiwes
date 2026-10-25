@@ -1,0 +1,662 @@
+{
+  "base_sha": "a936295b6e8c62d7d01e50c81bdfe5ffd653ec0f",
+  "claim": {
+    "node_id": "WF-G14-AUDITOR5",
+    "owner": "ASTRA_GPT",
+    "status": "RELEASED",
+    "claimed_at": "2026-09-13T05:26:00Z",
+    "fresh_base_main_sha": "d386e2bc53a76c3c20ecf804e5357d23efeb651d",
+    "write_scope": [
+      "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/reports/ASTRA-WF-G14-AUDITOR5.json",
+      "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/reports/ASTRA-LOOP-CODA-2026-09-13.json"
+    ],
+    "purpose": "Reconcile own legacy verifier checkpoint with implemented N03/N23 and independent N30 CI evidence; report-only, no runtime overlap.",
+    "released_at": "2026-09-13T05:28:00Z"
+  },
+  "claimed_at": "2026-09-12T20:28:40.971Z",
+  "code_blob": "fc17eea236d96fdc09b18b81ad362cd9f6137db7",
+  "code_commit": "fc67c45840d3a121323e43179989424272b8f494",
+  "completed_at": "2026-09-12T20:32:25.284Z",
+  "component_decisions": {
+    "conditional_existing_backlog": [
+      {
+        "decision": "DEFER_UNTIL_SQLITE_REPLICATION_REQUIREMENT",
+        "name": "Litestream",
+        "official": "https://litestream.io/"
+      },
+      {
+        "decision": "DEFER_UNTIL_TRACE_RETENTION_QUERY_REQUIREMENT",
+        "name": "Grafana Tempo",
+        "official": "https://grafana.com/docs/tempo/latest/"
+      },
+      {
+        "decision": "DEFER_UNTIL_OPENAPI_RUNTIME_EXISTS",
+        "name": "Schemathesis",
+        "official": "https://schemathesis.readthedocs.io/en/stable/"
+      },
+      {
+        "decision": "REUSE_CANDIDATES_REQUIRE_EQUIVALENCE_TEST_NOT_CLOSED",
+        "name": "Kata Containers"
+      },
+      {
+        "decision": "REUSE_TRIVY_SYFT_CANDIDATES_REQUIRE_EQUIVALENCE_TEST_NOT_CLOSED",
+        "name": "Grype"
+      }
+    ],
+    "mandatory_new_downloads_justified": 0,
+    "pending_existing_acquisitions": [
+      "Vite",
+      "Supabase",
+      "DuckDB",
+      "AVF"
+    ]
+  },
+  "five_passes": [
+    "literal identity/source hash",
+    "Python implementation/test symbol validation",
+    "independent execution verifier contract",
+    "artifact to task/requirement/goal inverse",
+    "coverage against explicit requirement inventory"
+  ],
+  "gaps": [
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "runtime/src/storage/.gitkeep; runtime/src/adapters/README.md",
+      "existing_node": "WF-G08-MEMORY",
+      "gap": "Memoria persistente del workspace",
+      "id": "G01",
+      "recommended_owner": "SOL_GPT1",
+      "required_delta": "Implementar contrato de memoria y escritura normalizer/schema/audit/StateDelta; recuperar chat/proyecto/ventana con separación de memoria del agente.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "runtime/src/memory absent in inspected tree",
+      "existing_node": "WF-G09-RETRIEVAL / WF-G10-CONTEXT-FABRIC",
+      "gap": "Recuperación de contexto para LLM pequeñas",
+      "id": "G02",
+      "recommended_owner": "SOL_GPT1",
+      "required_delta": "ContextPack con presupuesto, procedencia, instrucciones fijadas y pruebas de recuperación.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "runtime/src/agent/.gitkeep",
+      "existing_node": "WF-G08-MEMORY",
+      "gap": "Frontera agente/herramientas/memoria",
+      "id": "G03",
+      "recommended_owner": "SOL_GPT1",
+      "required_delta": "Adaptar agente separado, impedir escrituras canónicas directas de LLM y probar aislamiento.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "runtime/src/uek/.gitkeep; adapters README only",
+      "existing_node": "WF-G11-SANDBOX-UEK",
+      "gap": "Sandbox y plataformas",
+      "id": "G04",
+      "recommended_owner": "SOL_GPT2",
+      "required_delta": "Seleccionar backend por capacidades; probar permisos, arranque y ciclo de vida en cada host.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "adapters README only; llm_gate.py callable boundary",
+      "existing_node": "WF-G12-WORKER / WF-G16-ROUTER",
+      "gap": "Router y workers",
+      "id": "G05",
+      "recommended_owner": "SOL_GPT2",
+      "required_delta": "Adaptar router existente y workers Stabilize; fallos de proveedor, presupuesto y timeout reales.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "runtime/src/integration/README.md; runtime/src/conn/.gitkeep",
+      "existing_node": "WF-G20-GLOBAL-INTEGRATION / WF-G17-LOOP / WF-G22-API",
+      "gap": "Integración/API/loop global",
+      "id": "G06",
+      "recommended_owner": "SOL_GPT3",
+      "required_delta": "UI→Fables→Stabilize→Memory/Router→resultado; stream/status/cancel y pruebas E2E.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "runtime/src/recovery/control_plane.py + runner.py",
+      "existing_node": "WF-G18-RECOVERY",
+      "gap": "Recovery global sin efectos duplicados",
+      "id": "G07",
+      "recommended_owner": "SOL_ORQUESTADOR",
+      "required_delta": "Checkpoint real leído/hasheado; reinicio de proceso, desconexión, failover, idempotencia de efectos.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "runtime/src/audit/five_pass.py newly implemented",
+      "existing_node": "WF-G14-AUDITOR5 / WF-G15-CONSOLIDATOR",
+      "gap": "Auditoría/cobertura/consolidación",
+      "id": "G08",
+      "recommended_owner": "ASTRA_GPT",
+      "required_delta": "Cablear verificador CI independiente y matriz completa; consolidación tarea/fase/proyecto. Local 9 PASS is not global closure.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "layer_01_research.py; runner.py post-handler supervisor",
+      "existing_node": "WF-G12-GLOBAL-COVERAGE: assign bounded producer",
+      "gap": "Verificación de fuentes y guard previo a efectos",
+      "id": "G09",
+      "recommended_owner": "SOL_ORQUESTADOR",
+      "required_delta": "Verificar bytes de fuentes por adaptador autorizado; control previo de capacidades y aislamiento real.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "Vite/Supabase/DuckDB/AVF exact final paths 404",
+      "existing_node": "existing S1/S2/S3 residual nodes",
+      "gap": "Adquisición/integración residual",
+      "id": "G10",
+      "recommended_owner": "SOL_ORQUESTADOR",
+      "required_delta": "Resolver destino/proveedor autorizado, no repetir motor ante idéntico fallo; cerrar tres pending del lote con ejecución.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "runtime/src/parallel/.gitkeep; observability/.gitkeep; existing vendor capabilities",
+      "existing_node": "WF-GOBS-OTEL-RUNTIME / WF-G19-RESOURCE-BRAIN",
+      "gap": "100x y observabilidad",
+      "id": "G11",
+      "recommended_owner": "SOL_GPT2 / ASTRA_GPT_RESEARCH",
+      "required_delta": "Cablear fan-out/fan-in/batching/backpressure/idempotencia; benchmark antes/después con recursos iguales.",
+      "status": "OPEN"
+    },
+    {
+      "classification": "Operational workstream, not a count of every atomic defect",
+      "evidence": "stale canonical summaries; factory regression recorded in A1 state",
+      "existing_node": "WF-G23-UI / WF-G12-GLOBAL-COVERAGE",
+      "gap": "UI completa y reconciliación de verdad",
+      "id": "G12",
+      "recommended_owner": "SOL_ORQUESTADOR / UI_FACTORY",
+      "required_delta": "Reparar paneles/efectos y demostrar persistencia local/exportación/plataformas; actualizar resúmenes sin promover PASS parcial.",
+      "status": "OPEN"
+    }
+  ],
+  "global_closed": false,
+  "iterations": [
+    {
+      "code_blob": "dbacb054cb837ef362032b95ee6da68809caf606",
+      "completed_at": "2026-09-12T20:32:25.284Z",
+      "status": "LOCAL_TEST_PASS_INTEGRATION_PENDING",
+      "test_blob": "dfbd83cc4cf6928705fb9ef96dafc15a5794736e"
+    },
+    {
+      "previous_claim": {
+        "node_id": "WF-G14-AUDITOR5",
+        "owner": "ASTRA_GPT",
+        "status": "CLAIMED",
+        "claimed_at": "2026-09-13T01:26:53.246Z",
+        "fresh_base_main_sha": "17d98a7e7f1a083108c96443d5bc10a05bb7024d",
+        "write_scope": [
+          "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/runtime/src/audit/**",
+          "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/runtime/tests/test_audit*"
+        ],
+        "purpose": "Implement read-only GitHub CI verifier: immutable revision, job/run success, actual test result, source/test hashes."
+      },
+      "status": "EXECUTING_CI_VERIFIER",
+      "captured_at": "2026-09-13T05:26:00Z"
+    },
+    {
+      "at": "2026-09-13T05:28:00Z",
+      "node": "WF-G14-AUDITOR5",
+      "scope": "Own report/checkpoint reconciliation only",
+      "base_main_sha": "d386e2bc53a76c3c20ecf804e5357d23efeb651d",
+      "status": "PASS_EVIDENCE_RECONCILIATION_PRODUCT_OPEN",
+      "source_identities": [
+        {
+          "path": "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/documentos proyectos UI YAIWES/📌MAX-SYSTEM-100X-FINAL-1.md",
+          "sha": "b9bc9a7f56cf17607b863829213f7bcb0f8b8081"
+        },
+        {
+          "path": "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/documentos proyectos UI YAIWES/📌👨‍💻 ULTIMA VERSIÓN cómo HACERLO MEJOR Q grock tiene ventanas agente  linux iOS Android phyton 🤯🤯🤯🎯 14 objetivos💡💡💡✅✅✅🎯🎯🎯.md",
+          "sha": "ecc8b3b1444ade0ca894789e149e881a08b999c0"
+        },
+        {
+          "path": "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/documentos proyectos UI YAIWES/🤯🗃️memoria del Wordflow resumen de lo que va en memoria del Wordflow para Kimi k y grock contexto de 20 millones d parámetros para el Wordflow y YAIWES.md",
+          "sha": "da109ae2d91e4563c01492ad365bbaa00fc6baa6"
+        }
+      ],
+      "queue": {
+        "path": "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/CRAZY-WALL-TASK-NODES-DYNAMIC-V5-2026-09-12.json",
+        "blob": "b25c1d756cbccc2107fa5f7fee9b6f83171ff709"
+      },
+      "five_passes": [
+        {
+          "pass": 1,
+          "result": "Source identities match N01; 98 normative packages; not a new exhaustive source-content audit."
+        },
+        {
+          "pass": 2,
+          "result": "Current five_pass/evidence/matrix and both test files inspected; exact Git blob hashes matched."
+        },
+        {
+          "pass": 3,
+          "result": "24 local auditor tests PASS; historical CI N23 run/job/log independently read: 41 Wordflow + 194 runtime + 32 subtests PASS."
+        },
+        {
+          "pass": 4,
+          "result": "N30 job/log independently read: mapping 98/98, certification 0/98, 98 missing_trace residuals. Audit success is not product success."
+        },
+        {
+          "pass": 5,
+          "result": "Legacy own claim scoped to reports; N03/N23 existing verifier reused; shared/other role files not modified."
+        }
+      ],
+      "local_test": {
+        "command": "python -m unittest discover -s runtime/tests -p 'test_audit*.py'",
+        "passed": 24,
+        "failed": 0,
+        "seconds": 0.025,
+        "kind": "REAL_LOCAL_TEST_SYNTHETIC_FIXTURES_NOT_PRODUCT_E2E",
+        "byte_identity": "All five git hash-object values equal GitHub blobs",
+        "blobs": {
+          "runtime/src/audit/five_pass.py": "7be820cb3642438a22f36778ecb5c2b549ffce12",
+          "runtime/src/audit/evidence.py": "ef1c9b753a2495f0488962a8e7f1160d1593e75b",
+          "runtime/src/audit/matrix.py": "637b64161f67f6d2f8aaa0280555964385bef6e2",
+          "runtime/tests/test_audit_five_pass.py": "1fd520fa74ff237418796c4a5f9a4766df02d508",
+          "runtime/tests/test_audit_evidence_matrix.py": "bc19c1502da720673b92d248f9d8bdaedc0c3cb9"
+        }
+      },
+      "ci": [
+        {
+          "run": 34730134580,
+          "job": 103651276537,
+          "sha": "fc67c45840d3a121323e43179989424272b8f494",
+          "conclusion": "success",
+          "wordflow": 23,
+          "runtime": 66,
+          "subtests": 9
+        },
+        {
+          "run": 34736273179,
+          "job": 103668162691,
+          "sha": "6223ed833be0fddf5023646f269089a7a3705e88",
+          "conclusion": "success",
+          "wordflow": 41,
+          "runtime": 194,
+          "subtests": 32,
+          "warnings": 2,
+          "scope": "Historical N23 snapshot, not current HEAD certification"
+        },
+        {
+          "run": 34738908302,
+          "job": 103675124914,
+          "sha": "d883ca6815fedabecc8be291badc55a40406dcb3",
+          "workflow": ".github/workflows/sol-gpt2-s2-01-duckdb-materialize-20260911.yml",
+          "job_name": "n30-g12-audit",
+          "conclusion": "success",
+          "scope": "Audit assertions only; independently verified job/log despite inherited DuckDB workflow filename"
+        }
+      ],
+      "coverage": {
+        "mapped": 98,
+        "total": 98,
+        "mapping_percent": 100,
+        "certified": 0,
+        "certification_percent": 0,
+        "missing_trace": 98,
+        "product_percent": null,
+        "product_verified": false
+      },
+      "gaps": [
+        "98 production RequirementTrace attestations absent in verified N30 snapshot.",
+        "Current trusted lookup remains a host-supplied contract; do not invent CI transport or treat unit fixtures as independent live CI.",
+        "Shared STATE/CHECKPOINT and legacy report remain inconsistent with newer queue; N04 owned by coordination dependencies.",
+        "V6 age-based reopening conflicts with user instruction: do not apply; preserve all foreign claims."
+      ],
+      "refutations_3": [
+        "N23 CI success does not certify current HEAD or entire product.",
+        "98/98 mapping is not implementation certification; 0/98 certification does not mean no working code.",
+        "Old local github_verifier draft is not published; existing N03 evidence/matrix must be reused rather than duplicated."
+      ],
+      "entry_goals_12": [
+        "PASS repo/main",
+        "PASS fresh HEAD",
+        "PASS V2/V4/V5/V6 read",
+        "PASS 3 source identities",
+        "PASS N01/N30 denominator read",
+        "PASS role scopes read",
+        "PASS N03 GAP/N23 CLOSED checked",
+        "PASS provenance hashes",
+        "PASS real CI logs",
+        "LIMIT platform E2E not assessed",
+        "PASS own previous checkpoint",
+        "PASS concrete 98 trace gap"
+      ],
+      "exit_goals_12": [
+        "PASS scoped report delta, no runtime change",
+        "GAP production symbols per requirement",
+        "PASS test revision limits explicit",
+        "PASS exact blobs checked",
+        "GAP full certification 98 missing traces",
+        "PASS foreign claims preserved",
+        "PASS no duplicate OSS node",
+        "PENDING final readback",
+        "PASS real/local fixtures distinguished",
+        "LIMIT no new platform support claim",
+        "UNMEASURED no 100x claim",
+        "PASS next canonical N03 followup recorded"
+      ],
+      "council_12": [
+        "Objective: certify evidence, not reimplement",
+        "Authority: live code/log over stale checkpoint",
+        "Ownership: own report only",
+        "Completeness: 98 packages",
+        "Reuse: N03/N23",
+        "Cause: missing persisted production traces",
+        "Repair: reconcile checkpoint",
+        "Negative: 24 tests include rejection cases",
+        "Compatibility: exact bytes tested",
+        "Concurrency: own CAS + readback",
+        "Remaining: N03/N04 and product E2E",
+        "Verdict: subgate reconciled, global open"
+      ],
+      "council_method": "Single-agent analytical review, not independent model consensus",
+      "next": {
+        "node": "N03-AUTO-AUDITOR-EVIDENCE",
+        "owner": "SOL-2-GPT",
+        "action": "Consume N30 residual IDs into existing production RequirementMatrix, bind exact code/test/evidence and trusted CI; obtain canonical claim/reassignment before runtime changes. Do not reopen N23 or N30 audit closure.",
+        "parallel_nodes": "N21/N32/N33 remain FREE in dynamic queue but are outside this run's priority audit scope; no claims taken."
+      }
+    }
+  ],
+  "limitations": [
+    "Caller must provide complete authoritative inventory",
+    "Trusted execution verifier adapter not yet wired",
+    "Immutable checkout required; filesystem reader is not a sandbox or TOCTOU guard",
+    "Product verified always false; semantic completeness and E2E not inferred"
+  ],
+  "next": "Consume N30 residual IDs into existing production RequirementMatrix, bind exact code/test/evidence and trusted CI; obtain canonical claim/reassignment before runtime changes. Do not reopen N23 or N30 audit closure.",
+  "node_id": "WF-G14-AUDITOR5",
+  "owner": "ASTRA_GPT",
+  "prior_active_state": "ASTRA-CROSSCHECK state retains historical scanner claim; new V7 node uses disjoint audit paths; preserve it.",
+  "progress": {
+    "batch": {
+      "percent": 85,
+      "recorded_pass": 17,
+      "remaining": [
+        "big-AGI",
+        "Vite",
+        "Vercel AI SDK"
+      ],
+      "total": 20
+    },
+    "components": {
+      "independently_checked_this_turn": "Four exact residual paths NOT_FOUND; not full 124 recount",
+      "recorded_percent": 96.77,
+      "recorded_present": 120,
+      "remaining": 4,
+      "total": 124
+    },
+    "global_product_percent": null,
+    "global_reason": "No complete requirement/code/test/evidence denominator validated; 96/4 constants and 100x target are not measured compliance.",
+    "oss11": {
+      "percent": 54.55,
+      "recorded_source_present": 6,
+      "remaining": 5,
+      "total": 11
+    }
+  },
+  "readback": "CLAIM_READBACK_VERIFIED; terminal report readback required",
+  "requirement": "Deterministic five-pass requirement/code/test/evidence coverage. Local read-back hashes; explicit test evidence; no self-certification of product.",
+  "schema": "yaiwes.node-report.v1",
+  "source_review": {
+    "blobs": [
+      "b9bc9a7f56cf17607b863829213f7bcb0f8b8081",
+      "ecc8b3b1444ade0ca894789e149e881a08b999c0",
+      "da109ae2d91e4563c01492ad365bbaa00fc6baa6"
+    ],
+    "current_user_instruction": "Auditoría forense X-Ray con verificación cruzada del plan, este chat, las instrucciones y Crazy Wall; informe detallado, porcentajes con denominador y plan de tres pasos.",
+    "scope": "Complete blobs retrieved and current identities matched; requirements/sections and implementation boundaries reviewed. Full four-pass every-line audit not completed."
+  },
+  "status": "REPORT_RECONCILED_N03_N23_PRODUCT_GAPS_OPEN",
+  "steps": [
+    "VERIFY_OR_RESEARCH",
+    "EXECUTE_AUTHORIZED_DELTA",
+    "TEST_AND_REPORT"
+  ],
+  "test_blob": "2cb967c5566b805b392d136c4a6d5debe24ea739",
+  "test_commit": "fc67c45840d3a121323e43179989424272b8f494",
+  "test_run_or_log": {
+    "command": "python -m unittest discover -s runtime/tests -p test_audit_five_pass.py -v",
+    "tests": 13,
+    "failures": 0,
+    "result": "OK",
+    "prepatch_failures": 3,
+    "scope": "Local auditor suite, not complete product E2E"
+  },
+  "three_step_plan": [
+    {
+      "acceptance": "Persistencia real de workspace y rechazo de referencias/deltas inválidos con evidencia.",
+      "name": "Fijar requisitos y cerrar cimientos",
+      "owners": [
+        "ASTRA_GPT",
+        "SOL_GPT1",
+        "SOL_ORQUESTADOR"
+      ],
+      "step": 1,
+      "tasks": [
+        "Matriz requisito/código/test/evidencia",
+        "Memory/write gate/context scopes",
+        "Reconciliar estados y resolver bloqueos literales"
+      ]
+    },
+    {
+      "acceptance": "E2E chat→runtime→memoria→reinicio→respuesta sin duplicar efectos.",
+      "name": "Conectar camino completo",
+      "owners": [
+        "SOL_GPT2",
+        "SOL_GPT3",
+        "ASTRA_GPT",
+        "SOL_ORQUESTADOR"
+      ],
+      "step": 2,
+      "tasks": [
+        "Capabilities/router/worker",
+        "Fables/API/stream/cancel",
+        "Audit/consolidator",
+        "Global recovery"
+      ]
+    },
+    {
+      "acceptance": "Cobertura bidireccional completa y cierre por evidencia aplicable; unsupported declarado.",
+      "name": "Verificar plataformas y rendimiento",
+      "owners": [
+        "SOL_GPT2",
+        "SOL_GPT3",
+        "SOL_ORQUESTADOR",
+        "UI_FACTORY"
+      ],
+      "step": 3,
+      "tasks": [
+        "UI funcional y datos locales",
+        "Desconexión/failover/cancel",
+        "Matriz por plataforma",
+        "Benchmark 100x y G12"
+      ]
+    }
+  ],
+  "verified_runtime_restart": {
+    "job": 103608081961,
+    "log_read_this_turn": true,
+    "package_pass": 19,
+    "run": 34714136180,
+    "scope": "Runtime replay/restart only",
+    "targeted_pass": 1
+  },
+  "write_scope": [
+    "runtime/src/audit/five_pass.py",
+    "runtime/tests/test_audit_five_pass.py"
+  ],
+  "current_iteration": {
+    "at": "2026-09-13T05:28:00Z",
+    "node": "WF-G14-AUDITOR5",
+    "scope": "Own report/checkpoint reconciliation only",
+    "base_main_sha": "d386e2bc53a76c3c20ecf804e5357d23efeb651d",
+    "status": "PASS_EVIDENCE_RECONCILIATION_PRODUCT_OPEN",
+    "source_identities": [
+      {
+        "path": "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/documentos proyectos UI YAIWES/📌MAX-SYSTEM-100X-FINAL-1.md",
+        "sha": "b9bc9a7f56cf17607b863829213f7bcb0f8b8081"
+      },
+      {
+        "path": "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/documentos proyectos UI YAIWES/📌👨‍💻 ULTIMA VERSIÓN cómo HACERLO MEJOR Q grock tiene ventanas agente  linux iOS Android phyton 🤯🤯🤯🎯 14 objetivos💡💡💡✅✅✅🎯🎯🎯.md",
+        "sha": "ecc8b3b1444ade0ca894789e149e881a08b999c0"
+      },
+      {
+        "path": "UI YAIWES/➡️📂 Wordflow LOOP UI YAIWES/documentos proyectos UI YAIWES/🤯🗃️memoria del Wordflow resumen de lo que va en memoria del Wordflow para Kimi k y grock contexto de 20 millones d parámetros para el Wordflow y YAIWES.md",
+        "sha": "da109ae2d91e4563c01492ad365bbaa00fc6baa6"
+      }
+    ],
+    "queue": {
+      "path": "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/CRAZY-WALL-TASK-NODES-DYNAMIC-V5-2026-09-12.json",
+      "blob": "b25c1d756cbccc2107fa5f7fee9b6f83171ff709"
+    },
+    "five_passes": [
+      {
+        "pass": 1,
+        "result": "Source identities match N01; 98 normative packages; not a new exhaustive source-content audit."
+      },
+      {
+        "pass": 2,
+        "result": "Current five_pass/evidence/matrix and both test files inspected; exact Git blob hashes matched."
+      },
+      {
+        "pass": 3,
+        "result": "24 local auditor tests PASS; historical CI N23 run/job/log independently read: 41 Wordflow + 194 runtime + 32 subtests PASS."
+      },
+      {
+        "pass": 4,
+        "result": "N30 job/log independently read: mapping 98/98, certification 0/98, 98 missing_trace residuals. Audit success is not product success."
+      },
+      {
+        "pass": 5,
+        "result": "Legacy own claim scoped to reports; N03/N23 existing verifier reused; shared/other role files not modified."
+      }
+    ],
+    "local_test": {
+      "command": "python -m unittest discover -s runtime/tests -p 'test_audit*.py'",
+      "passed": 24,
+      "failed": 0,
+      "seconds": 0.025,
+      "kind": "REAL_LOCAL_TEST_SYNTHETIC_FIXTURES_NOT_PRODUCT_E2E",
+      "byte_identity": "All five git hash-object values equal GitHub blobs",
+      "blobs": {
+        "runtime/src/audit/five_pass.py": "7be820cb3642438a22f36778ecb5c2b549ffce12",
+        "runtime/src/audit/evidence.py": "ef1c9b753a2495f0488962a8e7f1160d1593e75b",
+        "runtime/src/audit/matrix.py": "637b64161f67f6d2f8aaa0280555964385bef6e2",
+        "runtime/tests/test_audit_five_pass.py": "1fd520fa74ff237418796c4a5f9a4766df02d508",
+        "runtime/tests/test_audit_evidence_matrix.py": "bc19c1502da720673b92d248f9d8bdaedc0c3cb9"
+      }
+    },
+    "ci": [
+      {
+        "run": 34730134580,
+        "job": 103651276537,
+        "sha": "fc67c45840d3a121323e43179989424272b8f494",
+        "conclusion": "success",
+        "wordflow": 23,
+        "runtime": 66,
+        "subtests": 9
+      },
+      {
+        "run": 34736273179,
+        "job": 103668162691,
+        "sha": "6223ed833be0fddf5023646f269089a7a3705e88",
+        "conclusion": "success",
+        "wordflow": 41,
+        "runtime": 194,
+        "subtests": 32,
+        "warnings": 2,
+        "scope": "Historical N23 snapshot, not current HEAD certification"
+      },
+      {
+        "run": 34738908302,
+        "job": 103675124914,
+        "sha": "d883ca6815fedabecc8be291badc55a40406dcb3",
+        "workflow": ".github/workflows/sol-gpt2-s2-01-duckdb-materialize-20260911.yml",
+        "job_name": "n30-g12-audit",
+        "conclusion": "success",
+        "scope": "Audit assertions only; independently verified job/log despite inherited DuckDB workflow filename"
+      }
+    ],
+    "coverage": {
+      "mapped": 98,
+      "total": 98,
+      "mapping_percent": 100,
+      "certified": 0,
+      "certification_percent": 0,
+      "missing_trace": 98,
+      "product_percent": null,
+      "product_verified": false
+    },
+    "gaps": [
+      "98 production RequirementTrace attestations absent in verified N30 snapshot.",
+      "Current trusted lookup remains a host-supplied contract; do not invent CI transport or treat unit fixtures as independent live CI.",
+      "Shared STATE/CHECKPOINT and legacy report remain inconsistent with newer queue; N04 owned by coordination dependencies.",
+      "V6 age-based reopening conflicts with user instruction: do not apply; preserve all foreign claims."
+    ],
+    "refutations_3": [
+      "N23 CI success does not certify current HEAD or entire product.",
+      "98/98 mapping is not implementation certification; 0/98 certification does not mean no working code.",
+      "Old local github_verifier draft is not published; existing N03 evidence/matrix must be reused rather than duplicated."
+    ],
+    "entry_goals_12": [
+      "PASS repo/main",
+      "PASS fresh HEAD",
+      "PASS V2/V4/V5/V6 read",
+      "PASS 3 source identities",
+      "PASS N01/N30 denominator read",
+      "PASS role scopes read",
+      "PASS N03 GAP/N23 CLOSED checked",
+      "PASS provenance hashes",
+      "PASS real CI logs",
+      "LIMIT platform E2E not assessed",
+      "PASS own previous checkpoint",
+      "PASS concrete 98 trace gap"
+    ],
+    "exit_goals_12": [
+      "PASS scoped report delta, no runtime change",
+      "GAP production symbols per requirement",
+      "PASS test revision limits explicit",
+      "PASS exact blobs checked",
+      "GAP full certification 98 missing traces",
+      "PASS foreign claims preserved",
+      "PASS no duplicate OSS node",
+      "PENDING final readback",
+      "PASS real/local fixtures distinguished",
+      "LIMIT no new platform support claim",
+      "UNMEASURED no 100x claim",
+      "PASS next canonical N03 followup recorded"
+    ],
+    "council_12": [
+      "Objective: certify evidence, not reimplement",
+      "Authority: live code/log over stale checkpoint",
+      "Ownership: own report only",
+      "Completeness: 98 packages",
+      "Reuse: N03/N23",
+      "Cause: missing persisted production traces",
+      "Repair: reconcile checkpoint",
+      "Negative: 24 tests include rejection cases",
+      "Compatibility: exact bytes tested",
+      "Concurrency: own CAS + readback",
+      "Remaining: N03/N04 and product E2E",
+      "Verdict: subgate reconciled, global open"
+    ],
+    "council_method": "Single-agent analytical review, not independent model consensus",
+    "next": {
+      "node": "N03-AUTO-AUDITOR-EVIDENCE",
+      "owner": "SOL-2-GPT",
+      "action": "Consume N30 residual IDs into existing production RequirementMatrix, bind exact code/test/evidence and trusted CI; obtain canonical claim/reassignment before runtime changes. Do not reopen N23 or N30 audit closure.",
+      "parallel_nodes": "N21/N32/N33 remain FREE in dynamic queue but are outside this run's priority audit scope; no claims taken."
+    }
+  }
+}

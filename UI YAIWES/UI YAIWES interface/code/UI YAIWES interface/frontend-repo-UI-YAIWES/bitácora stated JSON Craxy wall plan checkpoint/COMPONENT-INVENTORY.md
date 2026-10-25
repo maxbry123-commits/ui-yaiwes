@@ -1,0 +1,33 @@
+# INVENTARIO FÍSICO — baseline 14 + revalidación post-124
+
+| # | Componente | Tree SHA en destino | Rol inicial |
+|---|---|---|---|
+|1|Apache PyCasbin|ca8d5efdcb1b63bbfabf07e6679075134391b314|Policy plugin|
+|2|Bulkman|271c64e915a38926db06754adc6c20841a4a4dd0|Resilience/bulkhead|
+|3|Dagu|766403bfa76c123b3d8bf9f2a9be3008e4e0d2eb|Donor only|
+|4|HTTPX|50f3492d7c603cfd94e5029870ac7546666dec5e|HTTP transport adapter|
+|5|Hypothesis|c7a0b0e22f5d5b63fd1f97fbd4dbf65a781e865c|Testing|
+|6|OpenTelemetry Python|2a74339d862124f2637247862f53497448619d49|Observability|
+|7|Pydantic|41f2003ff0dd618e9f0b751b01bcea3f1deb5c6f|Typed contracts|
+|8|Rule Engine|ab1bbafa70cc9fb0dc1f82c138e5a6a734e9a882|Deterministic rules|
+|9|Stabilize CORE|4698f403b847a5cc7aecd4b6f22a1636ca8be98b|Workflow owner|
+|10|Starlette|9d9ad977106de6488276491f051c93a2698954e7|ASGI/API|
+|11|pytest|05ba709ff69eab1ecb554ed1da1b7982b36dd64c|Testing|
+|12|redun|e301e8967ebdcb0b27734a820bd2608999b08541|Donor provenance/hashing|
+|13|resilient-circuit|32c7a96fee897e44e20a85b6e78995cc9bd5a9e3|Circuit breaker|
+|14|structlog|5393fcee00ae1ed638601ed9915c78dd862988d5|Structured logging|
+
+## Revalidación post-124 — cola 1×1
+
+| Entrada | Clasificación | Evidencia | Decisión |
+|---|---|---|---|
+|gVisor|MATERIALIZED_OK / DONOR_ONLY_UNMAPPED|tree `fa6b9f1ca81285907f24d71ef100410ef48aac1f`; source `https://github.com/google/gvisor`; commit `0a1316b0d180600212bd607aa0ccfe2a9b09a899`; LICENSE blob `f7a006d10464cfe9724b5d687c0013bf982cc66a`; roots `pkg/`, `runsc/`, `sandboxexec/`, `shim/`|Conservar como donor/provenance. NO copiar ni montar en runtime hasta existir contract+adapter+registry+loader+guard+test y ruta universal verificable.|
+|gfxstream|MATERIALIZED_OK / DONOR_ONLY_UNMAPPED|tree `e696264983a685fb44a7b9706bcf35383fd67159`; source `https://github.com/google/gfxstream`; commit `681d81edd2ec597b055c2fbe99a742d95545722a`; upstream tree `89e6b402afabac2ac63dd293da5c5b643c77c57b`; LICENSE blob `7a4a3ea2424c09fbe48d455aed1eaa94d9124835`; roots `host/`, `guest/`, `common/`, `codegen/`|Conservar como donor/provenance. NO copiar ni montar al hot path sin contrato gráfico explícito y enchufe universal completo.|
+|jsPDF|MATERIALIZED_OK / DONOR_ONLY_UNMAPPED|tree `b85b001772c33639db82c4c0b64313a37522bbc0`; source `https://github.com/parallax/jsPDF`; commit `a3930ce03a585a26b2c76d12a0f413ce96f6d1a3`; upstream tree `baf4d90e2f5a40eb9f558f616b803dc3fd50f095`; LICENSE MIT blob `dc7d3a9fa305defebad6cb88ba4cd9776f26fcd3`; roots `src/`, `dist/`, `types/`|Conservar como donor/provenance. NO copiar ni montar al runtime sin contrato de exportación PDF y enchufe universal completo.|
+|libdatachannel|MATERIALIZED_OK / DONOR_ONLY_UNMAPPED|tree `dce2a5f7a935d249b0130cb2c944bee4f06e7016`; source `https://github.com/paullouisageneau/libdatachannel`; commit `51085b8de4e6185dc019e3705c88b87933d7c3f6`; upstream tree `22d0552fdb095035c0f35049ad04bb5af1982d91`; LICENSE MPL-2.0 blob `14e2f777f6c395e7e04ab4aa306bbcc4b0c1120e`; roots `include/`=`f982e6717e2b7e39ab9cc5722dae4d0d57948144`, `src/`=`80b183c05737c47114dc322346fbb473b4dc1999`|Conservar como donor/provenance. NO copiar ni montar WebRTC/media al runtime sin contrato de transporte/media + adapter + registry + loader + guard + tests verificables.|
+|pgvector|MATERIALIZED_OK / DONOR_ONLY_UNMAPPED|tree `dee3af44e7c2b6779d02fa1372c89c9b89809679`; source `https://github.com/pgvector/pgvector`; commit `e48241b4dcc045b18902914f668d03d1d399dfbe`; LICENSE PostgreSQL blob `fc5f177fa5d9c0d20a949f4b4faa028999977008`; roots `src/`, `sql/`; META 0.8.6, PostgreSQL >=13|Conservar como donor/provenance. NO copiar ni montar hasta existir contrato memory/retrieval + adapter + registry + loader + guard + tests verificables.|
+|pytest|PARTIAL / PROVENANCE_MISMATCH / TEST_ONLY|declared source `https://github.com/pytest-dev/pytest`; SOURCE_COMMIT `1f787563f0a174f938ad3415c2ecd90ae35f03e2` → tree `aa19de18166fd2225a0884e809e11a6ef1f0a87c`; LICENSE MIT blob `c3f1657fce94589bd1ec7cead810639047f3d359`; destino contiene `src/_pytest/nodeid.py` blob `f859b15347567130b8537a06604f5b2e16cdfbb2`; upstream introdujo ese archivo en commit posterior `431f3e1f5fd70b9b0f8afa2d20a10421542e5c6a` → tree `978c5d48fd273d69326a6cd0861198a50c42c62e`|NO tratar como DUPLICATE_ALIAS ni provenance verificada. Mantener TEST_ONLY/NOT_WIRED y localizar snapshot físico exacto antes de cualquier claim.|
+
+P01 permanece abierto: estas filas verifican entradas físicas o GAPs de provenance, no el inventario post-124 completo.
+
+Regla de depuración: no copiar `.github`, `.agents`, `.buildkite`, `.claude`, changelogs, badges, docs, release automation ni tests upstream al runtime salvo que el nodo de prueba los necesite. Mantener source URL/SHA/license/provenance en evidencia; una licencia requerida no se clasifica como basura.

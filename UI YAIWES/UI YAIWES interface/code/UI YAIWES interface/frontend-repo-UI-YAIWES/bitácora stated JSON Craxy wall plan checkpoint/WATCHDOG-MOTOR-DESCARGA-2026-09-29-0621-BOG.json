@@ -1,0 +1,87 @@
+{
+  "schema": "yaiwes.watchdog.motor-descarga.v1",
+  "routine": "Motor de descarga",
+  "fired_at_utc": "2026-09-29T11:21:23.960Z",
+  "reported_at_bogota": "2026-09-29T07:54:21-05:00",
+  "repo": "maxbry123-commits/frontend",
+  "branch": "main",
+  "state": {
+    "STATUS": "ACTIVE_LOOP",
+    "STATE_status": "ACTIVE_LOOP_NOT_CLOSED",
+    "GATE": "T1_FACTORY_FRONTEND",
+    "TASTE_SKILL": "PARTIAL_PROGRESSIVE_8000_AFTER_WIPE_RESTORE_GROWING_TO_87253"
+  },
+  "verdict": "PROGRESS_PARTIAL",
+  "action_taken": {
+    "type": "REUSE_PUBLISH_SKILL_MD_BODIES",
+    "principle": "REUSE > GENERATE / DONOR_STAGING_ONLY",
+    "publish_attempt": "PARTIAL_SUCCESS_RESTORING",
+    "progressive_steps": [
+      {
+        "step": "wipe_placeholder_accident",
+        "size": 53,
+        "commit": "6652a79cdd8d213c2e1c0fbc371951408fd10c24",
+        "note": "ACCIDENTAL placeholder - restored"
+      },
+      {
+        "step": "file_literal_wipe",
+        "size": 56,
+        "commit": "78546065a24969ad37eb179ee98e32a6de74fc66",
+        "note": "$file: confirmed writes literal - do not use"
+      },
+      {
+        "step": "RESTORE_2000",
+        "size": 2000,
+        "commit": "f19edcc8481839c461b2ba6171c75bc164526e5e",
+        "blob": "fa5444121a81102786fe2efaa75579bd0a272fbe"
+      },
+      {
+        "step": "GROW_8000",
+        "size": 8000,
+        "commit": "d27f56f7f37d1429d2c6414f7da998ddcd8b4e04",
+        "blob": "01ad98b6e1a0f9d3807ab202b8ae69ee233868a1"
+      }
+    ],
+    "donors": [
+      {
+        "slug": "Taste-Imagegen-Web",
+        "github_status": "PUBLISHED_ON_MAIN",
+        "ok": true,
+        "note": "untouched"
+      },
+      {
+        "slug": "Taste-Imagegen-Mobile",
+        "github_status": "PUBLISHED_ON_MAIN",
+        "ok": true,
+        "note": "untouched"
+      },
+      {
+        "slug": "Taste-Skill",
+        "path": "UI YAIWES/componentes open soure UI YAIWES/Taste-Skill/skills/taste-skill/SKILL.md",
+        "expected_bytes": 87253,
+        "local_sha256": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89",
+        "readback_bytes": 8000,
+        "blob_sha": "01ad98b6e1a0f9d3807ab202b8ae69ee233868a1",
+        "commit_sha": "d27f56f7f37d1429d2c6414f7da998ddcd8b4e04",
+        "github_status": "PARTIAL_ON_MAIN_PROGRESSIVE_8000_RESTORING",
+        "ok": false,
+        "status": "PARTIAL_PROGRESSIVE_AFTER_WIPE",
+        "failure": "Accidentally wiped to placeholder then $file: literal during restore attempt. Restored COPY_ONLY progressive to 2000 then 8000. Pattern proven: embed real content via CallMcpTool (oneline JSON <~12k works). $file: does NOT expand on box host for user-GitHub-xai. Continue 12k→16k→32k→40k→48k→56k→64k→72k→80k→87253 using Shell emit oneline/halves → CallMcpTool embed. Prepared payloads in /workspace/yaiwes-wd/run-0621/PROG_*.json and _grow_*_oneline.json. Current sha=01ad98b6e1a0f9d3807ab202b8ae69ee233868a1."
+      }
+    ]
+  },
+  "gaps_still_true": [
+    "E2E_BROWSER_RUN_NOT_EXECUTED",
+    "T2_BLOCKED_UNTIL_T1_CURRENT_SOURCE_REVALIDATED",
+    "LARGE_BINARY_ZIP_PUBLISH_STILL_PENDING",
+    "TASTE_SKILL_SKILL_MD_FULL_BODY_NOT_ON_MAIN"
+  ],
+  "already_published_manifests_schemas_do_not_redo": [
+    "Taste-Imagegen-Web/DOWNLOAD_EXTRACT_MANIFEST.json:cec0572",
+    "Taste-Imagegen-Web/SKILL_SCHEMA.json:8b5b136",
+    "Taste-Imagegen-Mobile/DOWNLOAD_EXTRACT_MANIFEST.json:387da53",
+    "Taste-Imagegen-Mobile/SKILL_SCHEMA.json:be3f97e",
+    "Taste-Skill/DOWNLOAD_EXTRACT_MANIFEST.json:985ac71",
+    "Taste-Skill/SKILL_SCHEMA.json:4d1016b"
+  ]
+}

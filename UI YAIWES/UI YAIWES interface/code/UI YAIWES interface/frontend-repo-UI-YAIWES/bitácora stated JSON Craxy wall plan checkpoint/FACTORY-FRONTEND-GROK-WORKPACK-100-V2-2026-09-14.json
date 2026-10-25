@@ -1,0 +1,17 @@
+{
+  "schema": "yaiwes.factory.frontend.grok-workpack.supersession.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED",
+  "status": "SUPERSEDED_DUPLICATE_IDS_DO_NOT_CLAIM",
+  "reconciled_at": "2026-09-14T06:12:00-05:00",
+  "reason": "A pre-existing authoritative workpack already defines F-FE-090..F-FE-189. Keeping a second active manifest with the same logical IDs would violate one-node identity and collision rules.",
+  "authoritative_workpack": "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/FACTORY-FRONTEND-GROK-WORKPACK-100-V1-2026-09-14.json",
+  "authoritative_node_files": [
+    "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/FACTORY-FRONTEND-CONTROL-NODES-090-154-V1-2026-09-14.json",
+    "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/FACTORY-FRONTEND-OSS-NODES-155-173-V1-2026-09-14.json",
+    "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/FACTORY-FRONTEND-IMPROVEMENT-NODES-174-189-V1-2026-09-14.json"
+  ],
+  "preserved_audit": "UI YAIWES/watchdog UI YAIWES/➡️ Astra plan fábrica UI YAIWES/Frontend/factory-v0/audits/FRONTEND-OSS-INTEGRATION-GAP-MATRIX-V2-2026-09-14.json",
+  "next_ids": "F-FE-190+ only for verified gaps missing from authoritative V1",
+  "worker_action": "DO_NOT_CLAIM_ANY_NODE_FROM_THIS_FILE"
+}

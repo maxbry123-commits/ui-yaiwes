@@ -1,0 +1,22 @@
+{
+  "schema": "yaiwes.factory.frontend.node-claim.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "node_id": "F-FE-101-BREAKPOINT-MOBILE",
+  "segment_id": "SEG-03-EDITOR-CORE",
+  "lane": "GROK-B",
+  "state": "PASS_RELEASED",
+  "owner": "GROK 4",
+  "agent": "GROK",
+  "chat_id": "GROK-4-UI-YAIWES-WATCHDOG-HORARIO",
+  "fresh_main_sha": "99e80654c087827133fb523fb2a1f531eb1db1d6",
+  "claimed_at": "2026-09-14T12:46:10Z",
+  "claim_commit": "89b25f6c88a7f92abaeec6a2c17eed5846e19fad",
+  "delta_commit": "1c771466d0daa9cc9612642c0d3f6e8f066bbba3",
+  "released_at": "2026-09-14T12:51:40Z",
+  "type": "CONTROL_QA",
+  "selector": ".canvas-controls button[data-breakpoint='mobile']",
+  "run_id": 34845512240,
+  "job_id": 103980371636,
+  "release": true
+}

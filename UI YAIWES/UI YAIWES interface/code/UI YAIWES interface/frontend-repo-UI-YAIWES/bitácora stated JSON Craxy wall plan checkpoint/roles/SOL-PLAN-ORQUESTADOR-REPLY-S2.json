@@ -1,0 +1,30 @@
+{
+  "schema": "yaiwes.sol-plan.reply.v1",
+  "contract": "tel.workflow/v3",
+  "response_to": "S2-DEBATE-SOLPLAN-20260911-01",
+  "author": "🌞👷 sol osquestador plan 🎯",
+  "status": "ACTIONABLE_REPLY_LOOP_CONTINUES",
+  "decisions": {
+    "DUCKDB": "KEEP_FAIL_CLOSED. Do not retry blindly. Real run 34565130195 proves SOURCE_SPECIAL_FILE_GAP from symlinks in the official tree. Any alternate official transport still requires explicit provenance + literal destination + canonical motor compatibility + final read-back.",
+    "AVF": "KEEP_PROVIDER_GAP. Canonical motor commit ef0669... rewrites non-GitHub SOURCE_REPO through github.com, so android.googlesource is not supported by this immutable transport. Do not substitute mirror provenance without explicit authorization.",
+    "L05_TYPED_GAPS": "CODE_AND_TESTS_PRESENT_ON_MAIN; CI_CURRENTLY_PENDING. Do not promote PASS until latest run succeeds.",
+    "AVF_RUNTIME": "Separate acquisition/provider from runtime capability/hardware verification. S2 owns research/evidence/provider matrix; shared runtime implementation remains coordinator-owned unless explicitly handed off."
+  },
+  "evidence_basis": {
+    "duckdb_run": 34565130195,
+    "duckdb_job": 103155580176,
+    "duckdb_error": "SOURCE_SPECIAL_FILE_GAP with two symlink paths",
+    "canonical_engine_blob": "91e6e4486692eab314be5c7130d8310d3c855397",
+    "l05_main_commits": ["64407568e5a45e219113af20a1b85d1f4dffac85","52a26e7ed83f7eb8ad14dca60ce5702765b2be19","d005758d083c09a3ae6aa4dd999a04414bccadd3"],
+    "latest_ci_run": 34569726823
+  },
+  "next_order": [
+    "Do not stop while CI is pending.",
+    "Execute next FREE S2 node read-only: define the minimal AVF capability-probe contract from the three source documents + actual Android capability/permission evidence; separate transport, host capability, permission, guest boot and fallback.",
+    "Refute any claim that source presence or provider acquisition proves AVF guest boot.",
+    "Publish exact API fields, platform matrix, evidence anchors and next safe node in S2 STATE/debate.",
+    "When latest L05 CI becomes SUCCESS, consume that evidence; do not mutate canonical motors."
+  ],
+  "loop_rule": "NO STOP. One blocked acquisition does not stop S2; take next FREE research/verification node and reread fresh state after each node.",
+  "closure": "OPEN"
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "yaiwes.crazy-wall.claim.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "id": "GAP-03-REQ-S1-003",
+  "source_selector": "REQ-S1-003",
+  "state": "VERIFIED_CLOSED",
+  "owner": null,
+  "base_sha": "b4f62b56347df90166292373f57103a6950f7c39",
+  "source_anchor": "S1 §3 OSS GitHub",
+  "requirement": "Reutilizar OSS maduro cuando cubra capability; no reinventar orquestación, durabilidad o scheduling ya disponibles.",
+  "write_scope": [],
+  "verify_research": "PASS: existing plugins/catalog.py and universal plugin tests prove reuse catalog plus fail-closed wiring; no product-code delta required.",
+  "execute_delta": "REUSE_EXISTING: only CI/hash capture, RequirementTrace/evidence and focused five-pass were added.",
+  "test_report": {
+    "bootstrap_run": 34904075674,
+    "bootstrap_job": 104176546822,
+    "bootstrap_conclusion": "success",
+    "focused_run": 34904155183,
+    "focused_job": 104176800298,
+    "focused_conclusion": "success",
+    "behavior_tests": "3/3 PASS",
+    "five_pass": "1 passed / TRACEABILITY_PASS",
+    "readback_trace": "runtime/requirement_traces/REQ-S1-003.json",
+    "readback_evidence": "runtime/evidence/requirement_traces/REQ-S1-003.ci.json",
+    "product_verified": false
+  },
+  "close": "REQ-S1-003 VERIFIED_CLOSED only; global project remains RECOVERY_CONTINUATION.",
+  "strategy": "REUSE_EXISTING > PATCH > ADAPT"
+}

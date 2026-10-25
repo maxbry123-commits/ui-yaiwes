@@ -1,0 +1,12 @@
+[
+  {
+    "id": "0056:DuckDB-materialize",
+    "slug": "DuckDB",
+    "source_repo": "https://github.com/duckdb/duckdb-r",
+    "source_ref": "d2a702850f5a77207692abdc84a4d968ee594661",
+    "dest_repo": "maxbry123-commits/frontend",
+    "dest_branch": "main",
+    "dest_root": "UI YAIWES/automation/S2-duckdb-materialize-20260911/staging",
+    "publish": true
+  }
+]

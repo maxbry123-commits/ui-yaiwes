@@ -1,0 +1,22 @@
+{
+  "schema": "yaiwes.factory.frontend.node-claim.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "node_id": "F-FE-114-ELEMENT-PANEL",
+  "segment_id": "SEG-02-BROWSER",
+  "lane": "GROK-C",
+  "state": "PASS_RELEASED",
+  "owner": "GROK 4",
+  "agent": "GROK",
+  "chat_id": "GROK-4-UI-YAIWES-WATCHDOG-HORARIO",
+  "fresh_main_sha": "21a26512da553d20240d665e231357f6355fd0c4",
+  "claimed_at": "2026-09-14T20:49:55Z",
+  "claim_commit": "2a6a5dc9296172e6514ebdd5dcc4c1fae9e944c1",
+  "delta_commit": "a6b9440db81ddc9412b8a682a01e1472d16d7231",
+  "released_at": "2026-09-14T20:53:18Z",
+  "type": "CONTROL_QA",
+  "selector": "[data-kind='panel']",
+  "run_id": 34895356077,
+  "job_id": 104147861525,
+  "release": true
+}

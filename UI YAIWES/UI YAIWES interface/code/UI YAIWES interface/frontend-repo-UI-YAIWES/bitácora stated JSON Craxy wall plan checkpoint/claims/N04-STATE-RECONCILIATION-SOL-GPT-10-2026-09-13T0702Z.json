@@ -1,0 +1,12 @@
+{
+  "schema": "tel.workflow/v3.claim",
+  "state": "GAP_RELEASED",
+  "chat_id": "SOL GPT <10>",
+  "node_id": "N04-STATE-RECONCILIATION",
+  "fresh_main_sha": "31d1531f07c0c3c377901dc2b21a8d404cf204ed",
+  "write_scope": "shared state docs only",
+  "claimed_at": "2026-09-13T07:02:00Z",
+  "released_at": "2026-09-13T07:04:30Z",
+  "reason": "STATE/CHECKPOINT/Handoff reconciled and read back; Crazy Wall N04 row remained FREE, so 100 PASS could not be certified.",
+  "report": "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/reports/N04-STATE-RECONCILIATION-SOL-GPT-10-2026-09-13T0704Z.json"
+}

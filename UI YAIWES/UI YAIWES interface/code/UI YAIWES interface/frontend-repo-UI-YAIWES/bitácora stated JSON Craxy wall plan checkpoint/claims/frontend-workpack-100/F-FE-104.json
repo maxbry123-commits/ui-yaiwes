@@ -1,0 +1,22 @@
+{
+  "schema": "yaiwes.factory.frontend.node-claim.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "node_id": "F-FE-104-ZOOM-RESET",
+  "segment_id": "SEG-03-EDITOR-CORE",
+  "lane": "GROK-B",
+  "state": "PASS_RELEASED",
+  "owner": "GROK 4",
+  "agent": "GROK",
+  "chat_id": "GROK-4-UI-YAIWES-WATCHDOG-HORARIO",
+  "fresh_main_sha": "ad7714d5433a439b077912a077ea9a3974ca361f",
+  "claimed_at": "2026-09-14T15:48:30Z",
+  "claim_commit": "5d0fa22f081508340ddcaff3c08f9a298a50b544",
+  "delta_commit": "1d3882576270ba19852895779eb51cb7973e5818",
+  "released_at": "2026-09-14T15:51:54Z",
+  "type": "CONTROL_QA",
+  "selector": "#zoom-reset",
+  "run_id": 34864661870,
+  "job_id": 104045343090,
+  "release": true
+}

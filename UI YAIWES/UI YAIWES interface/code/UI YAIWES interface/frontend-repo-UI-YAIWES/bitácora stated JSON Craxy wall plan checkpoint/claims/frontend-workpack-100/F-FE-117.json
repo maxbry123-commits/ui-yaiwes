@@ -1,0 +1,22 @@
+{
+  "schema": "yaiwes.factory.frontend.node-claim.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "node_id": "F-FE-117-ELEMENT-VIDEO",
+  "segment_id": "SEG-02-BROWSER",
+  "lane": "GROK-C",
+  "state": "PASS_RELEASED",
+  "owner": "GROK 4",
+  "agent": "GROK",
+  "chat_id": "GROK-4-UI-YAIWES-WATCHDOG-HORARIO",
+  "fresh_main_sha": "cc7ce726070b607cf284978b93453a8bb083ce7d",
+  "claimed_at": "2026-09-14T22:48:04Z",
+  "claim_commit": "ec5237c196ed9ec44b553fc2393d9f4ae0895255",
+  "delta_commit": "0f4a6cad12e0c781dfc1bb7f0de0a9b11cf790c6",
+  "released_at": "2026-09-14T22:53:13Z",
+  "type": "CONTROL_QA",
+  "selector": "[data-kind='video']",
+  "run_id": 34906088470,
+  "job_id": 104182960801,
+  "release": true
+}

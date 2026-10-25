@@ -1,0 +1,401 @@
+{
+  "schema": "yaiwes.factory.segmented.crazywall.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "status": "ACTIVE_SEGMENTED_RECOVERY",
+  "created_at": "2026-09-14T04:17:00-05:00",
+  "last_reconciled_at": "2026-09-14T06:22:00-05:00",
+  "observed_head_before_write": "0305a040a28bfcb4e9a72d73294422c42ce1da57",
+  "authority": [
+    "fresh code + runtime + tests + Actions logs",
+    "FACTORY-SUPERVISOR-RECONCILIATION-R09-2026-09-13.json",
+    "FACTORY-CRAZY-WALL-FRONTEND-QA-V3-2026-09-12.json",
+    "FACTORY-CRAZY-WALL-DYNAMIC-V2-2026-09-12.json"
+  ],
+  "coordination": {
+    "one_chat_one_active_node": true,
+    "one_path_one_writer": true,
+    "claimable_states": [
+      "FREE",
+      "GAP_RESOLVABLE"
+    ],
+    "steps": [
+      "VERIFY_RESEARCH",
+      "EXECUTE_DELTA",
+      "TEST_REPORT"
+    ],
+    "strategy": [
+      "REUSE_EXISTING",
+      "PATCH",
+      "ADAPT",
+      "GENERATE",
+      "NEW_DOWNLOAD"
+    ],
+    "fresh_read_before_every_write": true,
+    "on_collision": "RELEASE_OR_SKIP_PATH_AND_READ_FRESH",
+    "producer_cannot_self_certify_final": true,
+    "no_force_push": true,
+    "no_git_lfs": true,
+    "external_agents": "MCP_OR_API_ONLY",
+    "pass_rule": "SOURCE_PRESENT != IMPLEMENTED != WIRED != RUNTIME_TEST_PASS != VERIFIED_CLOSED"
+  },
+  "version_policy": {
+    "frozen_entrypoints": [
+      "Frontend/factory-v0/index-v19.html",
+      "Frontend/factory-v0/index-v192.html"
+    ],
+    "worker_rule": "workers create or patch only their assigned segment v+1; historical versions remain untouched",
+    "integrator_rule": "only SEG-11 integrator may assemble a new candidate entrypoint",
+    "promotion_rule": "preview -> candidate after focused tests -> live only after TESTED_SHA == PUBLISHED_SHA",
+    "stable_live_is_never_worker_scratch": true
+  },
+  "segment_registry": "Frontend/factory-v0/src/segments/segment-registry-v1.js",
+  "preclaim_coordination_delta": {
+    "path": "Frontend/factory-v0/src/segments/segment-contract-v1.js",
+    "commit": "0129295e13ee2dd3c2b2d2d8ed642f68d2343f71",
+    "classification": "COORDINATION_ONLY_NOT_PASS_EVIDENCE"
+  },
+  "lateral_evidence_pending_reconciliation": [
+    {
+      "commit": "0305a040a28bfcb4e9a72d73294422c42ce1da57",
+      "message": "close(factory): record B-MK-001 tested acquisition adapter",
+      "policy": "Do not change B-MK-001 queue state until its report/test evidence is independently read back"
+    }
+  ],
+  "frontend_nodes": [
+    {
+      "id": "F-ARCH-SEGMENT-064",
+      "title": "Freeze historical entrypoints and establish path ownership segmentation",
+      "state": "VERIFIED_CLOSED",
+      "report_state": "PASS_STATIC_ARCHITECTURE_GATE",
+      "owner": "GPT-5.6-SOL",
+      "chat_id": "CURRENT_CHAT_FACTORY_SEGMENTATION",
+      "fresh_main_sha": "0129295e13ee2dd3c2b2d2d8ed642f68d2343f71",
+      "claimed_at": "2026-09-14T04:17:00-05:00",
+      "reported_at": "2026-09-14T04:23:00-05:00",
+      "write_scope": [
+        "Frontend/factory-v0/src/bootstrap/candidate-v193.js",
+        "Frontend/factory-v0/index-v193-preview.html",
+        "Frontend/factory-v0/tests/segment-architecture.test.mjs",
+        "UI YAIWES/readme arquitectura UI YAIWES/ARQUITECTURA-FACTORY-SEGMENTADA-V10-2026-09-14.md",
+        "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/FACTORY-CRAZY-WALL-SEGMENTED-V10-2026-09-14.json"
+      ],
+      "depends_on": [],
+      "steps": [
+        "Verify R09 divergence and fresh segment registry without modifying frozen versions",
+        "Create integrator-only V1.9.3 preview bootstrap that reuses existing modules in deterministic order",
+        "Run static architecture test/readback and report exact blobs/commit; do not promote live"
+      ],
+      "acceptance": "historical entrypoints unchanged; preview assembled by one bootstrap; every editable path has exactly one segment owner; static test PASS",
+      "run_id": 34827565204,
+      "job_id": 103923110683,
+      "tests": "segment-architecture.test.mjs PASS on GitHub Actions Node 22",
+      "evidence": [
+        "CI output: status=PASS, candidate=1.9.3, segments=11, frozen=index-v19.html|index-v192.html, convergedModules=11",
+        "index-v19 blob 4b043e60eba53156d1fc23c9b2fa4be30b54960a",
+        "index-v192 blob e3d68e1063cd37c2a59d91911f071fda304e4695",
+        "index-v193-preview blob c2e3466bb51162cf12af25c26fb283bdeb2eef98",
+        "segment-registry blob 3b6c69b296f8d4e8ae2d33c77acfdff409376139",
+        "candidate-v193 bootstrap blob 73deb4432ddb3b40519984a6d85925e9c6cd21a2",
+        "sparse CI revision 43870fe53f94cbc575142245db5acaab70253ed5"
+      ],
+      "remaining_gaps": [
+        "Browser/runtime coexistence is not certified by this static gate",
+        "Preview is not the published live candidate"
+      ],
+      "next_free_node": "F-INT-CANONICAL-065"
+    },
+    {
+      "id": "F-INT-CANONICAL-065",
+      "title": "Browser smoke and canonical candidate convergence",
+      "state": "VERIFIED_CLOSED",
+      "report_state": "PASS_UNIFIED_BROWSER_DESKTOP_MOBILE",
+      "owner": "GPT-5.6-SOL",
+      "chat_id": "CURRENT_CHAT_FACTORY_SEGMENTATION",
+      "fresh_main_sha": "90b5d6d23528edeabca3dd742bb3d1dde775b16f",
+      "claimed_at": "2026-09-14T04:23:00-05:00",
+      "reported_at": "2026-09-14T04:29:00-05:00",
+      "write_scope": [
+        "Frontend/factory-v0/index-v193*.html",
+        "Frontend/factory-v0/src/bootstrap/candidate-v193*.js",
+        "Frontend/factory-v0/tests/e2e/*v193*",
+        ".github/workflows/*factory-v193*",
+        "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/FACTORY-CRAZY-WALL-SEGMENTED-V10-2026-09-14.json"
+      ],
+      "depends_on": [
+        "F-ARCH-SEGMENT-064"
+      ],
+      "steps": [
+        "Verify preview loads all approved v19+v192 capabilities",
+        "Patch bootstrap/segment wiring only; no second state engine",
+        "Run desktop+mobile smoke and preserve run/job/artifact evidence"
+      ],
+      "acceptance": "workspace/browser + JSON/version/destination/skill/touch + router/layers/HF coexist on one exact candidate SHA",
+      "run_id": 34828013813,
+      "job_id": 103924524220,
+      "artifact_id": 10340718683,
+      "artifact_digest": "sha256:fa44d7bc4fa4f1247cd518a54f082dfceb7f55544646aba775c23f1404580a31",
+      "tested_sha": "64f98261af4fb334bd753b46460c4d83e3e63cc4",
+      "tests": "factory-v193-unified-smoke.spec.mjs: chromium-desktop 1/1 PASS; mobile-chromium Pixel 7 1/1 PASS; console errors=[]; request failures=[]",
+      "evidence": [
+        "index-v193.html blob 2f42d309cef2c523180b030d4bc1d924cd280a20",
+        "candidate-v193 bootstrap blob 73deb4432ddb3b40519984a6d85925e9c6cd21a2",
+        "segment-registry blob 3b6c69b296f8d4e8ae2d33c77acfdff409376139",
+        "historical index-v19 blob remains 4b043e60eba53156d1fc23c9b2fa4be30b54960a",
+        "historical index-v192 blob remains e3d68e1063cd37c2a59d91911f071fda304e4695",
+        "browser loaded app/import/json/version/destination/touch/skills/workspace/browser/router/backend/layers/remote/HF modules with HTTP 200",
+        "smoke verified two component insertions, layer controls, version increment, skill activation, Router BLOCKED_NO_REMOTE fail-closed, HF panel coexistence, JSON/HTML/output/delivery controls"
+      ],
+      "remaining_gaps": [
+        "Exhaustive F-UI-051..061 matrix must run on index-v193.html",
+        "Published exact SHA gate and independent cross-review remain open"
+      ],
+      "next_free_node": "F-FRONTEND-QA-066"
+    },
+    {
+      "id": "F-FRONTEND-QA-066",
+      "title": "Repoint existing F-UI-051..061 gates to the unified candidate",
+      "state": "GAP_RESOLVABLE",
+      "owner": "GPT-5.6-SOL",
+      "chat_id": "CURRENT_CHAT_FACTORY_SEGMENTATION",
+      "fresh_main_sha": "0305a040a28bfcb4e9a72d73294422c42ce1da57",
+      "claimed_at": "2026-09-14T04:29:00-05:00",
+      "write_scope": [
+        "Frontend/factory-v0/tests/e2e/**",
+        "Frontend/factory-v0/project-memory/**",
+        ".github/workflows/*factory*",
+        "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/FACTORY-CRAZY-WALL-SEGMENTED-V10-2026-09-14.json"
+      ],
+      "depends_on": [
+        "F-INT-CANONICAL-065"
+      ],
+      "steps": [
+        "Repair F-UI-051 harness selectors/indexing",
+        "Run 051..061 against same candidate without inheriting lane PASS",
+        "Report gaps and preserve independent review chain 062->063"
+      ],
+      "acceptance": "same tested candidate across controls/mobile/accessibility/router/HF/full journey; F-UI-063 remains sole FRONTEND_100 gate",
+      "evidence": [
+        "Frontend/factory-v0/project-memory/F-UI-066-V193-QA-GAP-REPORT-2026-09-14.md blob 4ad6e22be0e072a770ac3fca614ab826e823fc3a",
+        "QA report reconciliation commit 465b5843d55ae86fc0b0375ed1127defca0bcbef",
+        "V1.9.5 targeted run 34830387803 / job 103932105765 / artifact 10341712835"
+      ],
+      "remaining_gaps": [
+        "SEG-01-SHELL: mobile horizontal overflow body.scrollWidth=604 on viewport=412; fix content geometry, not cosmetic clipping",
+        "F-UI-055: Ctrl+K command palette/quick-action surface absent; reuse canonical actions, no second state engine"
+      ],
+      "report_state": "QA_PARTIAL_PASS_TWO_REAL_GAPS",
+      "reported_at": "2026-09-14T04:57:00-05:00",
+      "tested_candidate": "V1.9.5",
+      "run_id": 34830387803,
+      "job_id": 103932105765,
+      "artifact_id": 10341712835,
+      "artifact_digest": "sha256:210282ca705a43f8c011b47d2f926c0679320cffadf52272a7964b5ac8e5095c",
+      "tests": "V1.9.5 targeted closure regression: undo PASS; reload PASS; mobile Escape PASS; mobile canvas release PASS; command palette GAP; horizontal overflow GAP (body 604px on 412px viewport)",
+      "next_action": "READ_FRESH_THEN_CLAIM_ONE_REAL_GAP_ONLY"
+    },
+    {
+      "id": "F-FE-069-COMMAND-PALETTE",
+      "title": "Implement real Ctrl+K command palette over canonical actions",
+      "state": "FREE",
+      "segment_id": "SEG-02-BROWSER",
+      "owner": null,
+      "chat_id": null,
+      "write_scope": [
+        "Frontend/factory-v0/src/ui/component-browser-v3.js",
+        "Frontend/factory-v0/tests/e2e/f-ui-069-command-palette.spec.mjs",
+        "Frontend/factory-v0/project-memory/F-FE-069-*",
+        ".github/workflows/factory-f-fe-069*",
+        "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/FACTORY-CRAZY-WALL-SEGMENTED-V10-2026-09-14.json"
+      ],
+      "depends_on": [
+        "F-FRONTEND-QA-066"
+      ],
+      "steps": [
+        "VERIFY_RESEARCH",
+        "EXECUTE_DELTA",
+        "TEST_REPORT"
+      ],
+      "acceptance": "Ctrl+K opens accessible command surface; every listed command calls existing canonical UI/action path; keyboard navigation/Escape PASS; no second state engine",
+      "evidence_seed": [
+        "run 34830387803 job 103932105765: command surfaces count=0 on V1.9.5"
+      ]
+    },
+    {
+      "id": "F-FE-068-MOBILE-FIT",
+      "title": "Eliminate real mobile horizontal overflow without clipping functionality",
+      "state": "PASS_RELEASED",
+      "segment_id": "SEG-01-SHELL",
+      "owner": "GPT-5.6-SOL",
+      "chat_id": "CURRENT_CHAT_FACTORY_SEGMENTATION",
+      "write_scope": [
+        "Frontend/factory-v0/workspace-shell-v3.css",
+        "Frontend/factory-v0/tests/e2e/f-ui-068-mobile-fit.spec.mjs",
+        "Frontend/factory-v0/project-memory/F-FE-068-*",
+        ".github/workflows/factory-f-fe-068*",
+        "UI YAIWES/bitácora stated JSON Craxy wall plan checkpoint/FACTORY-CRAZY-WALL-SEGMENTED-V10-2026-09-14.json"
+      ],
+      "depends_on": [
+        "F-FRONTEND-QA-066"
+      ],
+      "steps": [
+        "VERIFY_RESEARCH",
+        "EXECUTE_DELTA",
+        "TEST_REPORT"
+      ],
+      "acceptance": "412px viewport has html/body scrollWidth <=414 without overflow:hidden-only masking; drawers, toolbar, canvas and touch targets remain usable; focused browser gate PASS",
+      "evidence_seed": [
+        "run 34830387803 job 103932105765: body.scrollWidth=604 on viewport=412"
+      ],
+      "fresh_main_sha": "3db57d0710dc87c9a57424acdfd797e734eb21e8",
+      "claimed_at": "2026-09-14T05:00:00-05:00",
+      "report_state": "PASS_FOCUSED_MOBILE_FIT",
+      "reported_at": "2026-09-14T06:22:00-05:00",
+      "final_sha": "7b1c57267d37646454e4541a0cfbf882a3819eb4",
+      "run_id": 34837590449,
+      "job_id": 103954867553,
+      "artifact_id": 10344608599,
+      "artifact_digest": "sha256:ea8f70e1c8f06378780dbd294f59f389666553b3e27459c9156cbf1a00b4a625",
+      "tests": "f-ui-068-mobile-fit.spec.mjs: 4/4 PASS; 390/412 root widths exact; offenders=[]; drawers/canvas/touch actions usable",
+      "evidence": [
+        "workspace-shell-v3.css blob 0ee1ed8d4fcf81c0bbdb64c9d861d6fcf39b50f5",
+        "test blob 478d6cd327b98c5cd6d0119b10ffdb6d28ef70ce",
+        "report Frontend/factory-v0/project-memory/F-FE-068-MOBILE-FIT-REPORT-2026-09-14.md",
+        "run 34837590449 job 103954867553 artifact 10344608599"
+      ],
+      "remaining_gaps": [
+        "SEG-11 must wire released shell into a new candidate and rerun candidate-level gates"
+      ],
+      "next_action": "RELEASED_READ_FRESH_NEXT_NODE"
+    }
+  ],
+  "backend_nodes": [
+    {
+      "id": "B-MK-001",
+      "title": "Canonical acquisition/extraction micro-kernel wrapper",
+      "state": "FREE",
+      "write_scope": [
+        "Frontend/factory-v0/src/microkernel/acquisition/**"
+      ],
+      "depends_on": [],
+      "steps": [
+        "Verify canonical Motor 2 and existing acquisition artifacts",
+        "Wrap, do not fork: capability request -> canonical acquisition adapter",
+        "Test fail-closed no-download path + exact provenance handoff"
+      ],
+      "acceptance": "no alternate downloader; canonical motor invoked only after approved capability gap"
+    },
+    {
+      "id": "B-MK-002",
+      "title": "Research and local dedup gate",
+      "state": "FREE",
+      "write_scope": [
+        "Frontend/factory-v0/src/microkernel/research/**"
+      ],
+      "depends_on": [],
+      "steps": [
+        "Search local OSS registry/capability bus first",
+        "Research external source only when local gap remains",
+        "Emit deterministic acquire|reuse|reject decision with source/license/version"
+      ],
+      "acceptance": "REUSE beats download; LLM limited to bounded ranking/ambiguity"
+    },
+    {
+      "id": "B-MK-003",
+      "title": "Provenance and integrity ledger",
+      "state": "FREE",
+      "write_scope": [
+        "Frontend/factory-v0/src/microkernel/provenance/**"
+      ],
+      "depends_on": [
+        "B-MK-001"
+      ],
+      "steps": [
+        "Define source_url/ref/hash/license/destination/adapter/test schema",
+        "Bind extracted artifact to SHA256 and destination",
+        "Reject promotion on missing provenance or hash mismatch"
+      ],
+      "acceptance": "every acquired artifact has auditable source/ref/hash/license/destination/adapter/test"
+    },
+    {
+      "id": "B-MK-004",
+      "title": "Fables Universal Plugin + capability bus wiring",
+      "state": "FREE",
+      "write_scope": [
+        "Frontend/factory-v0/src/microkernel/bus/**",
+        "Frontend/factory-v0/src/microkernel/plugins/**"
+      ],
+      "depends_on": [
+        "B-MK-003"
+      ],
+      "steps": [
+        "Verify existing Fables/plugin contracts before code",
+        "Adapt accepted capability behind typed bus port",
+        "Shadow-test adapter then activate registry entry"
+      ],
+      "acceptance": "new capability cannot mutate core directly; all calls pass typed adapter/bus"
+    },
+    {
+      "id": "B-MK-005",
+      "title": "MCP/API ingress + capability router",
+      "state": "FREE",
+      "write_scope": [
+        "Frontend/factory-v0/src/microkernel/mcp/**",
+        "Frontend/factory-v0/src/microkernel/router/**"
+      ],
+      "depends_on": [
+        "B-MK-004"
+      ],
+      "steps": [
+        "Reuse MCP SDK/router/backend adapter contracts",
+        "Route API/MCP request to registered capability with policy and secret_ref",
+        "Test health/route/error/cancel/readback without browser secrets"
+      ],
+      "acceptance": "MCP/API only external ingress; typed routing; fail-closed unknown capability/provider"
+    },
+    {
+      "id": "B-MK-006",
+      "title": "Deterministic auto-evolution promotion controller",
+      "state": "BLOCKED_AFTER_B-MK-001_005",
+      "write_scope": [
+        "Frontend/factory-v0/src/microkernel/promotion/**",
+        "Frontend/factory-v0/tests/microkernel/**"
+      ],
+      "depends_on": [
+        "B-MK-001",
+        "B-MK-002",
+        "B-MK-003",
+        "B-MK-004",
+        "B-MK-005"
+      ],
+      "steps": [
+        "Enforce 96/4 deterministic/LLM boundary",
+        "Run isolated + Factory integration tests before promote",
+        "Promote or reject with immutable evidence; never self-certify UI final"
+      ],
+      "acceptance": "capability_gap -> dedup -> research -> acquire -> provenance -> adapter -> bus -> test -> preview -> review -> promote|reject is auditable and fail-closed"
+    },
+    {
+      "id": "B-OSS-007",
+      "title": "Blender patterns + top10 app/web OSS + three additional candidates",
+      "state": "FREE",
+      "write_scope": [
+        "Frontend/factory-v0/project-memory/oss-research/**"
+      ],
+      "depends_on": [
+        "B-MK-002"
+      ],
+      "steps": [
+        "Research Blender interaction/plugin/workspace patterns and inventory local OSS",
+        "Rank 10 app/web design systems plus 3 additional candidates against concrete Factory gaps",
+        "Acquire nothing until B-MK-002 says NEW_DOWNLOAD and provenance/license are complete"
+      ],
+      "acceptance": "research maps component -> gap -> reuse/adapt/download decision; no duplicate monolith"
+    }
+  ],
+  "join_gates": {
+    "frontend": "F-ARCH-SEGMENT-064 -> F-INT-CANONICAL-065 -> F-FRONTEND-QA-066 -> existing F-UI-062 -> existing F-UI-063",
+    "backend": "B-MK-001 + B-MK-002 -> B-MK-003 -> B-MK-004 -> B-MK-005 -> B-MK-006",
+    "final": "frontend and backend evidence are reconciled; product 100% still requires exact published candidate + independent review + F-UI-063"
+  }
+}

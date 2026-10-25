@@ -1,0 +1,22 @@
+{
+  "schema": "yaiwes.factory.frontend.node-claim.v1",
+  "contract": "tel.workflow/v3",
+  "mode": "FAIL_CLOSED_LOOP",
+  "node_id": "F-FE-091-MODE-AI",
+  "segment_id": "SEG-03-EDITOR-CORE",
+  "lane": "GROK-A",
+  "state": "PASS_RELEASED",
+  "owner": "GROK 3",
+  "agent": "GROK",
+  "chat_id": "GROK-3-UI-YAIWES-FACTORY",
+  "fresh_main_sha": "9b695f604feff9fad45823fdee59cecd4cd34593",
+  "claimed_at": "2026-09-14T11:44:40Z",
+  "claim_commit": "c28219c394246cb40b091b3f66f31be156afaee9",
+  "delta_commit": "55a0b44e2162eae41007c345987886afdafeeddf",
+  "released_at": "2026-09-14T11:54:00Z",
+  "type": "CONTROL_QA",
+  "selector": "[data-mode='AI_ASSIST']",
+  "run_id": 34840394334,
+  "job_id": 103963770796,
+  "release": true
+}
