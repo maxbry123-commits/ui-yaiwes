@@ -26,8 +26,14 @@
       "source_path": "UI YAIWES/Fabrica Empaque-local YAIWES/Download programas/AppImageKit",
       "destination_repo": "maxbry123-commits/ui-yaiwes",
       "destination_path": "UI YAIWES/backend/componentes/AppImageKit",
-      "status": "PENDING",
-      "source_path_verified": false
+      "status": "VERIFIED_REMOTE_TREE_SHA",
+      "source_path_verified": true,
+      "source_tree_sha": "39f7eec0c1fdd4e2977af88834df8e4720bff5e0",
+      "destination_tree_sha": "39f7eec0c1fdd4e2977af88834df8e4720bff5e0",
+      "blob_count": 6,
+      "transport_method": "GIT_DATA_API_DIRECT_BLOBS",
+      "verified_commit": "7524c063f3bc2c1f4908efd7f970b9b44a4192ff",
+      "zip_used": false
     },
     {
       "name": "Apprise",
