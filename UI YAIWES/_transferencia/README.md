@@ -21,3 +21,12 @@ Totales: 61 interface + 126 backend = 187. Origen `maxbry123-commits/frontend@f2
 **IMPORTANTE:** estos son manifiestos de selección de rutas internas del repositorio, no el formato de entrada de Motor 2, que espera repositorios externos. Su ejecución exige preparar staging de cada componente o un adaptador externo a los motores inmutables. Los motores no se han arrancado; no hay ZIP nuevos, no hay componentes transferidos por estas colas, ni se ha borrado el origen. Los campos `source_path_verified=false` necesitan corroboración por Git antes de transferir. No usar Motor 4 para limpiar hasta verificaciones 100 %.
 
 Cada ZIP/parte debe ser inferior a 90 MB decimales; usar 85 MiB (89.128.960 bytes) por parte. Revisar symlinks, modos y blob SHA tras publicar. No incluir agentes autónomos.
+
+## Avance remoto comprobado (29-oct-2026)
+
+| Motor | Componente | Archivos Git | SHA de árbol idéntico | Referencia |
+|---|---|---:|---|---|
+| INTERFACE-M01 | CodeMirror 6 | 20 (3 symlinks y 1 ejecutable) | `1a7c7ade9f04041dc37a3c5eaa6e461f2009cbd4` | [commit](https://github.com/maxbry123-commits/ui-yaiwes/commit/9a83b1502f3940d4b7868dd3bda24c088415569a) |
+| BACKEND-M05 | AppImageKit | 6 | `39f7eec0c1fdd4e2977af88834df8e4720bff5e0` | [commit](https://github.com/maxbry123-commits/ui-yaiwes/commit/7524c063f3bc2c1f4908efd7f970b9b44a4192ff) |
+
+**Resultado actual: 2 de 187 componentes con árbol Git completo cotejado, 26 archivos de 26 en esos dos componentes. Restan 185 componentes.** Se importaron por Git Data API preservando los blobs Git y modos; *no* se utilizó ZIP ni el proceso canónico Motor 2 para estas dos copias. El resto permanece pendiente, sin borrado de origen.
