@@ -76,8 +76,16 @@
       "source_path": "UI YAIWES/componentes open soure UI YAIWES/CodeMirror 6",
       "destination_repo": "maxbry123-commits/ui-yaiwes",
       "destination_path": "UI YAIWES/interface/componentes/CodeMirror 6",
-      "status": "PENDING",
-      "source_path_verified": false
+      "status": "VERIFIED_REMOTE_TREE_SHA",
+      "source_path_verified": true,
+      "source_tree_sha": "1a7c7ade9f04041dc37a3c5eaa6e461f2009cbd4",
+      "destination_tree_sha": "1a7c7ade9f04041dc37a3c5eaa6e461f2009cbd4",
+      "blob_count": 20,
+      "executable_count": 1,
+      "symlink_count": 3,
+      "transport_method": "GIT_DATA_API_DIRECT_BLOBS",
+      "verified_commit": "9a83b1502f3940d4b7868dd3bda24c088415569a",
+      "zip_used": false
     },
     {
       "name": "dnd-kit",
