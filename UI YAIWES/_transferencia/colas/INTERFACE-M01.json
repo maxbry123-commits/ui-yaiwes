@@ -1,0 +1,213 @@
+{
+  "schema": "yaiwes.transfer.motor-batch.v1",
+  "motor_id": "INTERFACE-M01",
+  "component_limit": 20,
+  "component_count": 20,
+  "source_snapshot": "f24619095db85b6417e0b8227acf05c372846880",
+  "part_max_bytes": 90000000,
+  "part_target_mib": 85,
+  "driver_note": "Preparar rutas internas para el Motor 2 canónico (source_repo no acepta subpaths sin staging). No ejecutar cola tal cual.",
+  "status": "PREPARADA_SIN_EJECUTAR",
+  "items": [
+    {
+      "name": "apache-echarts",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/todos los componentes/Watchdog UI/telemetry/apache-echarts",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/apache-echarts",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "AppJS",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/Fabrica Empaque-local YAIWES/Download programas/AppJS",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/AppJS",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "assistant-ui",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/todos los componentes/Watchdog UI/chat/assistant-ui",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/assistant-ui",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "axe-core",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/axe-core",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/axe-core",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "big-AGI",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/big-AGI",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/big-AGI",
+      "status": "UI_ONLY_REQUIRES_SELECTION",
+      "source_path_verified": false
+    },
+    {
+      "name": "Chart.js",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Chart.js",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Chart.js",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "CodeMirror 6",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/CodeMirror 6",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/CodeMirror 6",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "dnd-kit",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/todos los componentes/Watchdog UI/drag-drop/dnd-kit",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/dnd-kit",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Electron",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/Fabrica Empaque-local YAIWES/Download programas/Electron",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Electron",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Excalidraw",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Excalidraw",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Excalidraw",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Flutter",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Flutter",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Flutter",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "flutter_rust_bridge",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/flutter_rust_bridge",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/flutter_rust_bridge",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "flutter_secure_storage",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/flutter_secure_storage",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/flutter_secure_storage",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "frappe-gantt",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/todos los componentes/Watchdog UI/gantt/frappe-gantt",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/frappe-gantt",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "fullcalendar",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/todos los componentes/Watchdog UI/calendar/fullcalendar",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/fullcalendar",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Grafana",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Grafana",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Grafana",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "GSAP",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/GSAP",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/GSAP",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Jan",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Jan",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Jan",
+      "status": "UI_ONLY_REQUIRES_SELECTION",
+      "source_path_verified": false
+    },
+    {
+      "name": "jsPDF",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/jsPDF",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/jsPDF",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "LibreChat",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/LibreChat",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/LibreChat",
+      "status": "UI_ONLY_REQUIRES_SELECTION",
+      "source_path_verified": false
+    }
+  ]
+}

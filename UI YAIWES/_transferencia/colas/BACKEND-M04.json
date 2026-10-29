@@ -1,0 +1,213 @@
+{
+  "schema": "yaiwes.transfer.motor-batch.v1",
+  "motor_id": "BACKEND-M04",
+  "component_limit": 20,
+  "component_count": 20,
+  "source_snapshot": "f24619095db85b6417e0b8227acf05c372846880",
+  "part_max_bytes": 90000000,
+  "part_target_mib": 85,
+  "driver_note": "Preparar rutas internas para el Motor 2 canónico (source_repo no acepta subpaths sin staging). No ejecutar cola tal cual.",
+  "status": "PREPARADA_SIN_EJECUTAR",
+  "items": [
+    {
+      "name": "MCP Python SDK",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/MCP Python SDK",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/MCP Python SDK",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "MCP TypeScript SDK",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/MCP TypeScript SDK",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/MCP TypeScript SDK",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "OpenTelemetry Python",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/OpenTelemetry Python",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/OpenTelemetry Python",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "ow",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/ow",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/ow",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Playwright",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Playwright",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Playwright",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "PyCasbin",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/PyCasbin",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/PyCasbin",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Pydantic",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Pydantic",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Pydantic",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "pytest",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/pytest",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/pytest",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "resilient-circuit",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/resilient-circuit",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/resilient-circuit",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "runtypes",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/runtypes",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/runtypes",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "SQLCipher",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/SQLCipher",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/SQLCipher",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Stabilize CORE",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Stabilize CORE",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Stabilize CORE",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Starlette",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Starlette",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Starlette",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "structlog",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/structlog",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/structlog",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "superstruct",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/superstruct",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/superstruct",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Tree-sitter",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Tree-sitter",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Tree-sitter",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "typeguard",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/typeguard",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/typeguard",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "typia",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/typia",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/typia",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Vercel AI SDK",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Vercel AI SDK",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Vercel AI SDK",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Voluptuous",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/Voluptuous",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Voluptuous",
+      "status": "PENDING",
+      "source_path_verified": false
+    }
+  ]
+}

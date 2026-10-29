@@ -1,0 +1,213 @@
+{
+  "schema": "yaiwes.transfer.motor-batch.v1",
+  "motor_id": "INTERFACE-M02",
+  "component_limit": 20,
+  "component_count": 20,
+  "source_snapshot": "f24619095db85b6417e0b8227acf05c372846880",
+  "part_max_bytes": 90000000,
+  "part_target_mib": 85,
+  "driver_note": "Preparar rutas internas para el Motor 2 canónico (source_repo no acepta subpaths sin staging). No ejecutar cola tal cual.",
+  "status": "PREPARADA_SIN_EJECUTAR",
+  "items": [
+    {
+      "name": "Lucide",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Lucide",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Lucide",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Mammoth.js",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Mammoth.js",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Mammoth.js",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "monaco-editor",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/todos los componentes/Watchdog UI/dsl-editor/monaco-editor",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/monaco-editor",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "MSW",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/MSW",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/MSW",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Neutralino-JS",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/Fabrica Empaque-local YAIWES/Download programas/Neutralino-JS",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Neutralino-JS",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "NodeGui",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/Fabrica Empaque-local YAIWES/Download programas/NodeGui",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/NodeGui",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Onlook",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Onlook",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Onlook",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Open WebUI",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Open WebUI",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Open WebUI",
+      "status": "UI_ONLY_REQUIRES_SELECTION",
+      "source_path_verified": false
+    },
+    {
+      "name": "PDF.js",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/PDF.js",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/PDF.js",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "PixiJS",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/PixiJS",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/PixiJS",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Radix UI",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Radix UI",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Radix UI",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "React",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/React",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/React",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "React Testing Library",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/React Testing Library",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/React Testing Library",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "React Virtuoso",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/React Virtuoso",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/React Virtuoso",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "react-hook-form",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/react-hook-form",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/react-hook-form",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "react-jsonschema-form",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/todos los componentes/Watchdog UI/watchdog-form/react-jsonschema-form",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/react-jsonschema-form",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "react-markdown",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/react-markdown",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/react-markdown",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "React-Toastify",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/React-Toastify",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/React-Toastify",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Rete.js",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Rete.js",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Rete.js",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Sandpack",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Sandpack",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Sandpack",
+      "status": "PENDING",
+      "source_path_verified": false
+    }
+  ]
+}

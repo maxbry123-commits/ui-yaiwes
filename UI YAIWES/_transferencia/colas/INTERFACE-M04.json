@@ -1,0 +1,23 @@
+{
+  "schema": "yaiwes.transfer.motor-batch.v1",
+  "motor_id": "INTERFACE-M04",
+  "component_limit": 20,
+  "component_count": 1,
+  "source_snapshot": "f24619095db85b6417e0b8227acf05c372846880",
+  "part_max_bytes": 90000000,
+  "part_target_mib": 85,
+  "driver_note": "Preparar rutas internas para el Motor 2 canónico (source_repo no acepta subpaths sin staging). No ejecutar cola tal cual.",
+  "status": "PREPARADA_SIN_EJECUTAR",
+  "items": [
+    {
+      "name": "Zustand",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Zustand",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Zustand",
+      "status": "PENDING",
+      "source_path_verified": false
+    }
+  ]
+}

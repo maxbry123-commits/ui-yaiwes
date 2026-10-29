@@ -1,0 +1,213 @@
+{
+  "schema": "yaiwes.transfer.motor-batch.v1",
+  "motor_id": "BACKEND-M06",
+  "component_limit": 20,
+  "component_count": 20,
+  "source_snapshot": "f24619095db85b6417e0b8227acf05c372846880",
+  "part_max_bytes": 90000000,
+  "part_target_mib": 85,
+  "driver_note": "Preparar rutas internas para el Motor 2 canónico (source_repo no acepta subpaths sin staging). No ejecutar cola tal cual.",
+  "status": "PREPARADA_SIN_EJECUTAR",
+  "items": [
+    {
+      "name": "Omarchy",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES interface/Backend/Motor3 approved donors/Omarchy",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Omarchy",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "OPA",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/OPA",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/OPA",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "OpenBao",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/OpenBao",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/OpenBao",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "OpenFGA",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/OpenFGA",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/OpenFGA",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "OpenJDK",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/Fabrica Empaque-local YAIWES/Download programas/OpenJDK",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/OpenJDK",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "OpenTelemetry Collector",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/OpenTelemetry Collector",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/OpenTelemetry Collector",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "ORAS",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/ORAS",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/ORAS",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "pkg",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/Fabrica Empaque-local YAIWES/Download programas/pkg",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/pkg",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Prometheus",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Prometheus",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Prometheus",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Python-TUF",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Python-TUF",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Python-TUF",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "QEMU",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/QEMU",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/QEMU",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "scrcpy",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/scrcpy",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/scrcpy",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "SOPS",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/SOPS",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/SOPS",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Squirrel",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/Fabrica Empaque-local YAIWES/Download programas/Squirrel",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Squirrel",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Syft",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Syft",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Syft",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "sysinfo",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/sysinfo",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/sysinfo",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Testcontainers Python",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Testcontainers Python",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Testcontainers Python",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "tokio-vsock",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/tokio-vsock",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/tokio-vsock",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Toxiproxy",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Toxiproxy",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Toxiproxy",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Trivy",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Trivy",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/backend/componentes/Trivy",
+      "status": "PENDING",
+      "source_path_verified": false
+    }
+  ]
+}

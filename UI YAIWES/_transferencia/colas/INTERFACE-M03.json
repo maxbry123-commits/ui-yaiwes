@@ -1,0 +1,213 @@
+{
+  "schema": "yaiwes.transfer.motor-batch.v1",
+  "motor_id": "INTERFACE-M03",
+  "component_limit": 20,
+  "component_count": 20,
+  "source_snapshot": "f24619095db85b6417e0b8227acf05c372846880",
+  "part_max_bytes": 90000000,
+  "part_target_mib": 85,
+  "driver_note": "Preparar rutas internas para el Motor 2 canónico (source_repo no acepta subpaths sin staging). No ejecutar cola tal cual.",
+  "status": "PREPARADA_SIN_EJECUTAR",
+  "items": [
+    {
+      "name": "shadcn-ui",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/shadcn-ui",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/shadcn-ui",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Shiki",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Shiki",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Shiki",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Silex",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Silex",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Silex",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "SortableJS",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/SortableJS",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/SortableJS",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Tailwind CSS",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Tailwind CSS",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Tailwind CSS",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "TanStack Query",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/TanStack Query",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/TanStack Query",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "tanstack-table",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/todos los componentes/Watchdog UI/task-queue/tanstack-table",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/tanstack-table",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Tauri",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/Fabrica Empaque-local YAIWES/Download programas/Tauri",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Tauri",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "tool-ui",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/todos los componentes/Watchdog UI/tool-rendering/tool-ui",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/tool-ui",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Uppy",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Uppy",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Uppy",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "vest",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/vest",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/vest",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Vitest",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Vitest",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Vitest",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Wails",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/Fabrica Empaque-local YAIWES/Download programas/Wails",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Wails",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Web-Design-Studio",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Web-Design-Studio",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Web-Design-Studio",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "Webstudio",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/Webstudio",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/Webstudio",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "xterm.js",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/xterm.js",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/xterm.js",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "XYFlow React Flow",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/componentes open soure UI YAIWES/XYFlow React Flow",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/XYFlow React Flow",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "yup",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/yup",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/yup",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "zod",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/zod",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/zod",
+      "status": "PENDING",
+      "source_path_verified": false
+    },
+    {
+      "name": "zod-validation-error",
+      "source_repo": "maxbry123-commits/frontend",
+      "source_commit": "f24619095db85b6417e0b8227acf05c372846880",
+      "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/zod-validation-error",
+      "destination_repo": "maxbry123-commits/ui-yaiwes",
+      "destination_path": "UI YAIWES/interface/componentes/zod-validation-error",
+      "status": "PENDING",
+      "source_path_verified": false
+    }
+  ]
+}
