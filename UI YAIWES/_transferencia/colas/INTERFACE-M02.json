@@ -76,8 +76,13 @@
       "source_path": "UI YAIWES/componentes open soure UI YAIWES/Onlook",
       "destination_repo": "maxbry123-commits/ui-yaiwes",
       "destination_path": "UI YAIWES/interface/componentes/Onlook",
-      "status": "PENDING",
-      "source_path_verified": false
+      "status": "VERIFIED_REMOTE_TREE_SHA",
+      "source_path_verified": true,
+      "source_tree_sha": "eb18c19f487eb7d470d5b9324852127528e8fec7",
+      "destination_tree_sha": "eb18c19f487eb7d470d5b9324852127528e8fec7",
+      "blob_count": 2,
+      "transport_method": "GIT_DATA_API_DIRECT_BLOBS",
+      "zip_used": false
     },
     {
       "name": "Open WebUI",
@@ -176,8 +181,13 @@
       "source_path": "UI YAIWES/componentes open soure UI YAIWES/react-markdown",
       "destination_repo": "maxbry123-commits/ui-yaiwes",
       "destination_path": "UI YAIWES/interface/componentes/react-markdown",
-      "status": "PENDING",
-      "source_path_verified": false
+      "status": "VERIFIED_REMOTE_TREE_SHA",
+      "source_path_verified": true,
+      "source_tree_sha": "5c4c9ffa1013e36a8446c8f365988fea2848c919",
+      "destination_tree_sha": "5c4c9ffa1013e36a8446c8f365988fea2848c919",
+      "blob_count": 20,
+      "transport_method": "GIT_DATA_API_DIRECT_BLOBS",
+      "zip_used": false
     },
     {
       "name": "React-Toastify",

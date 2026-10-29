@@ -206,8 +206,13 @@
       "source_path": "UI YAIWES/watchdog UI YAIWES/Download librerías/Voluptuous",
       "destination_repo": "maxbry123-commits/ui-yaiwes",
       "destination_path": "UI YAIWES/backend/componentes/Voluptuous",
-      "status": "PENDING",
-      "source_path_verified": false
+      "status": "VERIFIED_REMOTE_TREE_SHA",
+      "source_path_verified": true,
+      "source_tree_sha": "7df60a8a3489613677add8495f2087d85812b87f",
+      "destination_tree_sha": "7df60a8a3489613677add8495f2087d85812b87f",
+      "blob_count": 25,
+      "transport_method": "GIT_DATA_API_DIRECT_BLOBS",
+      "zip_used": false
     }
   ]
 }

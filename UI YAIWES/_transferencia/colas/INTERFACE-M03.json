@@ -36,8 +36,13 @@
       "source_path": "UI YAIWES/componentes open soure UI YAIWES/Silex",
       "destination_repo": "maxbry123-commits/ui-yaiwes",
       "destination_path": "UI YAIWES/interface/componentes/Silex",
-      "status": "PENDING",
-      "source_path_verified": false
+      "status": "VERIFIED_REMOTE_TREE_SHA",
+      "source_path_verified": true,
+      "source_tree_sha": "29835fbe014a2870a5cbfc2c925cb3d02b204d61",
+      "destination_tree_sha": "29835fbe014a2870a5cbfc2c925cb3d02b204d61",
+      "blob_count": 2,
+      "transport_method": "GIT_DATA_API_DIRECT_BLOBS",
+      "zip_used": false
     },
     {
       "name": "SortableJS",
@@ -146,8 +151,13 @@
       "source_path": "UI YAIWES/componentes open soure UI YAIWES/Web-Design-Studio",
       "destination_repo": "maxbry123-commits/ui-yaiwes",
       "destination_path": "UI YAIWES/interface/componentes/Web-Design-Studio",
-      "status": "PENDING",
-      "source_path_verified": false
+      "status": "VERIFIED_REMOTE_TREE_SHA",
+      "source_path_verified": true,
+      "source_tree_sha": "e69eef7b595aff6567f6ff368845ebb1f6cc5434",
+      "destination_tree_sha": "e69eef7b595aff6567f6ff368845ebb1f6cc5434",
+      "blob_count": 3,
+      "transport_method": "GIT_DATA_API_DIRECT_BLOBS",
+      "zip_used": false
     },
     {
       "name": "Webstudio",
@@ -156,8 +166,13 @@
       "source_path": "UI YAIWES/componentes open soure UI YAIWES/Webstudio",
       "destination_repo": "maxbry123-commits/ui-yaiwes",
       "destination_path": "UI YAIWES/interface/componentes/Webstudio",
-      "status": "PENDING",
-      "source_path_verified": false
+      "status": "VERIFIED_REMOTE_TREE_SHA",
+      "source_path_verified": true,
+      "source_tree_sha": "4dcd2c7f5a44e7df4190cab8e998e2e6d0ddd596",
+      "destination_tree_sha": "4dcd2c7f5a44e7df4190cab8e998e2e6d0ddd596",
+      "blob_count": 2,
+      "transport_method": "GIT_DATA_API_DIRECT_BLOBS",
+      "zip_used": false
     },
     {
       "name": "xterm.js",
